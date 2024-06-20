@@ -25,7 +25,7 @@ import Contactus from './components/Contactus';
 import Paragraph from './components/Paragraph';
 import FeaturdArticles from './components/About_Svtol_Read_More/FeaturdArticles';
 import SuccessStories from './components/About_Svtol_Read_More/SussessStories';
-
+import International_Appointement from './components/International_Appointement'
 // Keyframes for pulsating animation
 const pulse = keyframes`
   0% {
@@ -108,6 +108,8 @@ function App() {
       <Route path="/Reserch" element={<Paragraph/>}> </Route>
       <Route path="/Success_story" element={<SuccessStories/>}> </Route>
       <Route path="/FeaturdArticles" element={<FeaturdArticles/>}> </Route>
+      <Route path="/International" element={<International_Appointement/>}> </Route>
+
 
 
       

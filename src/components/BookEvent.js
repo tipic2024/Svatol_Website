@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import axios from 'axios';
 
 export default function BookEvent() {
+  
   const [formData, setFormData] = useState({
+
     name: '',
     whatsappMobile: '',
     address: '',
@@ -11,6 +13,9 @@ export default function BookEvent() {
     screenshot: null,
     transactionId: '',
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [submissionStatus, setSubmissionStatus] = useState(null);
   const [errors, setErrors] = useState({});
@@ -164,6 +169,7 @@ export default function BookEvent() {
                     <label
                       className={`pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.whatsappMobile ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
                       htmlFor="whatsappMobile"
+
                     >
                       WhatsApp/Mobile Number
                     </label>

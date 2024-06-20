@@ -101,6 +101,11 @@ export default function NB() {
                                     </li>
                                     <li className="border-b py-2">
                                         <Link to="/what_we_stands_for" onClick={handleLinkClick} className="hover:text-[#7B553C] text-black text-[15px] font-bold block uppercase">What We Stand For</Link>
+
+                                    </li>
+                                    <li className="border-b py-2">
+                                        <Link to="/what_we_stands_for" onClick={handleLinkClick} className="hover:text-[#7B553C] text-black text-[15px] font-bold block uppercase">List of Director</Link>
+                                        
                                     </li>
                                 </ul>
                             </li>

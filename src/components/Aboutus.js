@@ -74,15 +74,15 @@ const Aboutus = () => {
                 animate={{ color: isVisible ? '#7B553C' : '#000000' }}
                 transition={{ duration: 0.5 }}
               >
-                About
+                About Us
               </motion.span>
-              <motion.span
+              {/* <motion.span
                 animate={{ color: isVisible ? '#7B553C' : '#000000' }}
                 transition={{ duration: 0.5 }}
                 className="text-amber-900"
               >
                 Us
-              </motion.span>
+              </motion.span> */}
             </h2>
             <motion.p
               initial={{ opacity: 0 }}

@@ -83,6 +83,13 @@ function Footer() {
                 <p onClick={() => handleNavigation("/what_we_stands_for")} className="text-gray-600 text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500 font-bold">WHAT WE STAND FOR</p>
                 <p onClick={() => handleNavigation("/Aboutus")} className="text-gray-600 text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500 font-bold">ABOUT US</p>
               </div>
+              <div className="sm:flex sm:items-center sm:justify-between">
+              <div className="flex gap-4 hover:cursor-pointer mt-14">
+                <img src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg" width="30" height="30" alt="fb" />
+                <img src="https://www.svgrepo.com/show/303115/twitter-3-logo.svg" width="30" height="30" alt="tw" />
+                <img src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg" width="30" height="30" alt="inst" />
+              </div>
+            </div>
             </div>
 
             <div>
@@ -93,13 +100,13 @@ function Footer() {
                 <img className="opacity-100 h-36 w-30 object-scale-down h ml-5" src={require('./Logo.png')} alt="Event Logo"></img>
               </div>
             </div>
-            <div className="sm:flex sm:items-center sm:justify-between">
+            {/* <div className="sm:flex sm:items-center sm:justify-between">
               <div className="flex gap-4 hover:cursor-pointer">
                 <img src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg" width="30" height="30" alt="fb" />
                 <img src="https://www.svgrepo.com/show/303115/twitter-3-logo.svg" width="30" height="30" alt="tw" />
                 <img src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg" width="30" height="30" alt="inst" />
               </div>
-            </div>
+            </div> */}
           </div>
           {/* <hr className="my-6 border-gray-200 md:my-8 dark:border-gray-700 h-2" /> */}
         </div>

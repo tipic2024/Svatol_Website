@@ -65,14 +65,70 @@ function Services() {
             className="object-scale-down max-h-96 max-w-full rounded-lg"
             whileHover={{ scale: 1.05 }}
           />
-          <Link className='w-full' to="/book_appointment">
-          <button
-            className='lg:ml-24 content-center mt-7 p-2 font-sans font-bold uppercase text-[#FFF6E7] hover:text-[#7B553C] hover:bg-[#90EE90] bg-[#2E8B57] rounded-lg drop-shadow-mds'
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Book appointment
-          </button></Link>
+          <div>
+  <h1 className='mt-5 text-[#003425] text-center text-lg sm:text-xl font-bold  md:text-xl'>
+  One click away  healthy lifestyle..
+  </h1>
+</div>
+
+<div className='flex flex-col sm:flex-row items-center justify-center mt-5 '>
+  <Link className='mb-3 sm:mb-0 sm:mr-3' to="/book_appointment">
+    <button
+      className='
+        content-center 
+        font-serif 
+        font-bold 
+        text-xs 
+        p-2 
+        uppercase 
+        text-white 
+        hover:text-[#7B553C] 
+        hover:bg-[#90EE90] 
+        bg-[#003430] 
+        border-[#2f902f] 
+        border-solid 
+        border-0 
+        drop-shadow-mds
+        mb-4
+        rounded-md
+      '
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      Book OPD Appointment
+    </button>
+  </Link>
+
+  <Link className='sm:ml-1' to="/International">
+    <button
+      className='
+        content-center 
+        font-serif 
+        font-bold 
+        text-xs 
+        p-2 
+        uppercase 
+        text-white 
+        hover:text-[#7B553C] 
+        hover:bg-[#90EE90] 
+        bg-[#003430] 
+        border-[#2f902f] 
+        border-solid 
+        border-0 
+        drop-shadow-mds
+        mb-4
+        rounded-md
+
+      '
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      International / Online Appointment
+    </button>
+  </Link>
+</div>
+          
+          
         </motion.div>
 
        

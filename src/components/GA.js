@@ -1,11 +1,11 @@
 import { Carousel } from "@material-tailwind/react";
- 
-export  default function GA() {
+
+export default function GA() {
   return (
-    <Carousel  loop autoplay
-      className="rounded-xl border-4  border-[#7B553C] "
+    <Carousel loop autoplay
+      className="rounded-xl border-4 border-[#7B553C] h-[85vh]" // Adjusted height here
       navigation={({ setActiveIndex, activeIndex, length }) => (
-        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2 ">
+        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (
             <span
               key={i}
@@ -26,11 +26,11 @@ export  default function GA() {
       <img
         src={require('./gallery/Hero_2.jpg')}
         alt="image 2"
-        className="h-full w-full object-cover"      
-      />                                      
+        className="h-full w-full object-cover"
+      />
       <img
-       src={require('./Hero_3_p.jpg')}
-        alt="image 3"                                 
+        src={require('./Hero_3_p.jpg')}
+        alt="image 3"
         className="h-full w-full object-cover"
       />
     </Carousel>

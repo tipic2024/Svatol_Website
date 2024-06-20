@@ -34,7 +34,7 @@ export default function Doctors_Img() {
           <h1 className='text-4xl text-center mt-10 font-bold'>Meet our Doctors</h1>
         </motion.div>
         <h1 className='text-center mt-5 '>
-        Replace Our Focus statement with “Meet our team of doctors dedicated to offering a diverse array of programs and events designed to deepen your understanding and appreciation of Ayurveda. Our experts are committed to guiding you through personalized wellness journeys and holistic healing practices. Join us to explore the timeless wisdom of Ayurveda and achieve a balanced, healthy lifestyle
+        “Meet our team of doctors dedicated to offering a diverse array of programs and events designed to deepen your understanding and appreciation of Ayurveda. Our experts are committed to guiding you through personalized wellness journeys and holistic healing practices. Join us to explore the timeless wisdom of Ayurveda and achieve a balanced, healthy lifestyle
         </h1>
       </div>
 
