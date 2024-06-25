@@ -12,10 +12,10 @@ export default function Dermatology() {
       </div>
       <div className="sm:w-1/2 p-5 text-center lg:text-right animate__animated animate__fadeInRight">
         <div className="text">
-          <h2 className="my-4 font-bold text-3xl sm:text-4xl text-amber-900 text-center mt-0">
+          <h2 className="my-4 font-bold font-serif text-3xl sm:text-4xl text-amber-900 text-center mt-0">
             Dermatology <span className="text-amber-900"></span>
           </h2>
-          <p className="text-amber-950 text-justify">
+          <p className="text-amber-950 text-justify font-serif">
             Dermatology is the medical specialty focused on the diagnosis, treatment, and prevention of
             conditions related to the skin, hair, and nails. Dermatologists are trained to identify and manage a
             wide range of dermatological issues, including acne, eczema, psoriasis, skin cancer, and infections.

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Services() {
   return (
+    <>
     <AnimatePresence>
       <motion.div
         className='flex flex-wrap justify-center items-center gap-4 p-4 mt-0 bg-[#FFF6E7]'
@@ -26,7 +27,7 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/Oncology.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-xl text-center mt-5'>Oncology</h1>
+            <h1 className='text-black text-xl font-serif text-center mt-5'>Oncology</h1>
           </motion.div></Link>
 
           <Link to="/sr_Dermatology">
@@ -36,7 +37,7 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/Dermatology.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-xl text-center mt-5'>Dermatology</h1>
+            <h1 className='text-black text-xl font-serif text-center mt-5'>Dermatology</h1>
           </motion.div>
           </Link>
          
@@ -47,7 +48,7 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/General_Physician.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-lg text-center mt-5'>General_Physician</h1>
+            <h1 className='text-black text-lg font-serif text-center mt-5'>General_Physician</h1>
           </motion.div>
           </Link>
         </motion.div>
@@ -66,12 +67,12 @@ function Services() {
             whileHover={{ scale: 1.05 }}
           />
           <div>
-  <h1 className='mt-5 text-[#003425] text-center text-lg sm:text-xl font-bold  md:text-xl'>
+  <h1 className='mt-5 text-[#003425] text-center  font-serif text-lg sm:text-xl font-bold  md:text-xl'>
   One click away  healthy lifestyle..
   </h1>
 </div>
 
-<div className='flex flex-col sm:flex-row items-center justify-center mt-5 '>
+<div className='flex flex-col sm:flex-row items-center font-serif justify-center mt-5 '>
   <Link className='mb-3 sm:mb-0 sm:mr-3' to="/book_appointment">
     <button
       className='
@@ -145,8 +146,8 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/Preventive_Health_Checkup.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-xl text-center mt-5'>Health</h1>
-            <h1 className='text-black text-xl text-center'>Checkup</h1>
+            <h1 className='text-black text-xl font-serif text-center mt-5'>Health</h1>
+            <h1 className='text-black text-xl font-serif text-center'>Checkup</h1>
           </motion.div>
           </Link>
 
@@ -157,7 +158,7 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/Panchkarma.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-xl text-center mt-5'>Panchkarma</h1>
+            <h1 className='text-black text-xl font-serif text-center mt-5'>Panchkarma</h1>
           </motion.div>
           </Link>
 
@@ -168,13 +169,51 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/Annual_Routin_Check.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-xl text-center mt-5'>Annual Routin</h1>
-            <h1 className='text-black text-xl text-center'>Check</h1>
+            <h1 className='text-black text-xl  font-serif text-center mt-5'>Annual Routin</h1>
+            <h1 className='text-black text-xl font-serif text-center'>Check</h1>
           </motion.div>
           </Link>
         </motion.div>
       </motion.div>
     </AnimatePresence>
+
+    <div className='flex justify-center'>
+      <h1 className='text-3xl'>Frequently Asked Questions</h1>
+    </div>
+
+    <div className='flex lg:flex-col justify-between'>
+  
+      <div className='flex lg:flex-col'>
+      <h1 className='text-xl font-bold'>How do I book an appointment?</h1>
+      <p className='text-sm font-thin flex-wrap'>
+      Click the "Book My Appointment" button on the home page to select the date and time at your convenience, and make the payment to confirm the appointment.
+      </p>
+      </div>
+
+      <div className='flex lg:flex-row'>
+      <h1 className='text-xl font-bold'>How do I book an appointment?</h1>
+      <p className='text-sm font-thin flex-wrap flex-row'>
+      Click the "Book My Appointment" button on the home page to select the date and time at your convenience, and make the payment to confirm the appointment.
+      </p>
+
+      </div>
+     
+    </div>
+         
+
+
+        <Link to="/contactus">
+        <button
+                    type="submit"
+                    className="mb-6 w-full  rounded-full bg-sky-500 text-black px-6 pt-2.5 pb-2 text-lg font-serif font-bold uppercase leading-normal lg:mb-0"
+                  >
+                    Contact us
+                  </button>
+                  </Link>
+     
+    
+    
+    </>
   );
 }
 

@@ -257,7 +257,7 @@ export default function BookEvent() {
                   </div>
                   <button
                     type="submit"
-                    className="inline-block w-full rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 bg-blue-200 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_#3b71ca] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_#3b71ca] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_#3b71ca]"
+                    className="inline-block w-full font-serif rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 bg-blue-200 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_#3b71ca] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_#3b71ca] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_#3b71ca]"
                   >
                     Submit
                   </button>

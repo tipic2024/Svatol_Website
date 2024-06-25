@@ -18,7 +18,7 @@ export default function Vision() {
 					<path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
 					<path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
 				</svg> */}
-				<p className="px-6 py-1 text-lg  text-gray-900 mt-3"> SVATOL Ayurveda Healthcare and Research Pvt. Ltd.
+				<p className="px-6 py-1 text-lg font-serif text-gray-900 mt-3"> SVATOL Ayurveda Healthcare and Research Pvt. Ltd.
 is captivated by the profound wisdom of the
 Ayurvedic System of Medicine, fueling our
 impassioned quest to revolutionize the healthcare

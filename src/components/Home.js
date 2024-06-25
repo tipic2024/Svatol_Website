@@ -16,6 +16,7 @@ import Services from './Book'
 import BookEvent from './BookEvent'
 import SuccessStories from './About_Svtol_Read_More/SussessStories'
 import FeaturdArticles from './About_Svtol_Read_More/FeaturdArticles'
+import Key_services from './key_services'
 
 export default function Home() {
 
@@ -27,6 +28,7 @@ export default function Home() {
       
       
       <Doctors_Img/>
+      <Key_services/>
      
       
       {/* <Services/> */}

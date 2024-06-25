@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import axios from 'axios';
 
 export default function Contactus() {
@@ -8,6 +8,10 @@ export default function Contactus() {
     queries: '',
     mobile:''
   });
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
 
   const [submissionStatus, setSubmissionStatus] = useState(null);
   const [errors, setErrors] = useState({});
@@ -148,7 +152,7 @@ export default function Contactus() {
                 
                 <button
                   type="submit"
-                  className="mb-6 w-full rounded bg-sky-500 text-white px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal lg:mb-0"
+                  className="mb-6 w-full rounded bg-sky-500 text-black px-6 pt-2.5 pb-2 text-lg font-serif font-bold  uppercase leading-normal lg:mb-0"
                 >
                   Send
                 </button>
@@ -174,8 +178,8 @@ export default function Contactus() {
                     </svg>
                   </div>
                   <div>
-                    <h6 className="text-sm font-semibold mb-0">Address</h6>
-                    <p className="text-sm text-neutral-600">
+                    <h6 className="text-sm font-bold font-serif mb-0">Address</h6>
+                    <p className="text-sm text-neutral-600 font-serif">
                       123 Main Street, New York, NY 10030
                     </p>
                   </div>
@@ -198,7 +202,7 @@ export default function Contactus() {
                     </svg>
                   </div>
                   <div>
-                    <h6 className="text-sm font-semibold mb-0">Phone</h6>
+                    <h6 className="text-sm font-bold font-serif mb-0">Phone</h6>
                     <p className="text-sm text-neutral-600">+1 (123) 456-7890</p>
                   </div>
                 </div>
@@ -220,8 +224,8 @@ export default function Contactus() {
                     </svg>
                   </div>
                   <div>
-                    <h6 className="text-sm font-semibold mb-0">Email</h6>
-                    <p className="text-sm text-neutral-600">
+                    <h6 className="text-sm font-bold font-serif  mb-0">Email</h6>
+                    <p className="text-sm font-serif text-neutral-600">
                       info@example.com
                     </p>
                   </div>

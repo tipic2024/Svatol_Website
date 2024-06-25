@@ -14,10 +14,10 @@ function Appointment() {
               <GiMeditation size={64} color="white" className='bg-transparent'/>
               <div className='mt-5'>
                 <div className='bg-[#1E325F]'>
-                  <h1 className="text-white text-center ">MEDITATION</h1>
+                  <h1 className="text-white text-center font-serif-">MEDITATION</h1>
                 </div>
                 <div className='bg-[#1E325F]'>
-                  <h1 className="text-white text-center ">CENTERS</h1>
+                  <h1 className="text-white text-center font-serif ">CENTERS</h1>
                 </div>
               </div>
             </div>
