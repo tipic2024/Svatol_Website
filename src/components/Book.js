@@ -176,43 +176,58 @@ function Services() {
         </motion.div>
       </motion.div>
     </AnimatePresence>
-
-    <div className='flex justify-center'>
-      <h1 className='text-3xl'>Frequently Asked Questions</h1>
+    <div class="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Frequently asked questions</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white shadow-md rounded-md p-6">
+                <h3 class="text-xl font-bold mb-4">Anim pariatur cliche reprehenderit?</h3>
+                <p class="text-gray-700 text-base">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt autem numquam dolore molestias aperiam culpa alias veritatis architecto eos, molestiae vitae ex eligendi libero eveniet dolorem, doloremque rem aliquid perferendis.
+                </p>
+            </div>
+            <div class="bg-white shadow-md rounded-md p-6">
+                <h3 class="text-xl font-bold mb-4">Non cupidatat skateboard dolor brunch?</h3>
+                <p class="text-gray-700 text-base">
+                    Distinctio corporis, iure facere ducimus quos consectetur ipsa ut magnam autem doloremque ex! Id, sequi. Voluptatum magnam sed fugit iusto minus et suscipit? Minima sunt at nulla tenetur, numquam unde quod modi magnam ab deserunt ipsam sint aliquid dolores libero repellendus cupiditate mollitia quidem dolorem odit
+                </p>
+            </div>
+            <div class="bg-white shadow-md rounded-md p-6">
+                <h3 class="text-xl font-bold mb-4">Praesentium voluptatibus temporibus consequatur non aspernatur?</h3>
+                <p class="text-gray-700 text-base">
+                    Minima sunt at nulla tenetur, numquam unde quod modi magnam ab deserunt ipsam sint aliquid dolores libero repellendus cupiditate mollitia quidem dolorem. Voluptatum magnam sed fugit iusto minus et suscipit? Minima sunt at nulla tenetur?
+                </p>
+            </div>
+            <div class="bg-white shadow-md rounded-md p-6">
+                <h3 class="text-xl font-bold mb-4">Laudantium perferendis, est alias iure ut veniam suscipit dolorem fugit?</h3>
+                <p class="text-gray-700 text-base">
+                    Et ipsam corporis earum ea ut quae cum non iusto blanditiis ipsum dolor eius reiciendis, velit adipisci quas. Numquam unde quod modi magnam ab deserunt ipsam sint aliquid dolores libero repellendus cupiditate mollitia quidem dolorem odit
+                </p>
+            </div>
+            <div class="bg-white shadow-md rounded-md p-6">
+                <h3 class="text-xl font-bold mb-4">Numquam unde quod modi magnam ab deserunt ipsam sint aliquid dolores libero repellendus cupiditate mollitia quidem dolorem odit?</h3>
+                <p class="text-gray-700 text-base">
+                    Distinctio corporis, iure facere ducimus quos consectetur ipsa ut magnam autem doloremque ex! Id, sequi. Voluptatum magnam sed fugit iusto minus et suscipit? Minima sunt at nulla tenetur, numquam unde quod modi magnam ab deserunt ipsam sint aliquid dolores libero repellendus cupiditate mollitia quidem dolorem odit
+                </p>
+            </div>
+            <div class="bg-white shadow-md rounded-md p-6">
+                <h3 class="text-xl font-bold mb-4">Distinctio corporis, iure facere ducimus?</h3>
+                <p class="text-gray-700 text-base">
+                    Eaque eos corrupti debitis tenetur repellat, beatae quibusdam incidunt, fuga non iste dignissimos officiis nam officia obcaecati commodi ratione qui nesciunt.
+                </p>
+            </div>
+        </div>
     </div>
-
-    <div className='flex lg:flex-col justify-between'>
-  
-      <div className='flex lg:flex-col'>
-      <h1 className='text-xl font-bold'>How do I book an appointment?</h1>
-      <p className='text-sm font-thin flex-wrap'>
-      Click the "Book My Appointment" button on the home page to select the date and time at your convenience, and make the payment to confirm the appointment.
-      </p>
-      </div>
-
-      <div className='flex lg:flex-row'>
-      <h1 className='text-xl font-bold'>How do I book an appointment?</h1>
-      <p className='text-sm font-thin flex-wrap flex-row'>
-      Click the "Book My Appointment" button on the home page to select the date and time at your convenience, and make the payment to confirm the appointment.
-      </p>
-
-      </div>
-     
-    </div>
-         
-
-
-        <Link to="/contactus">
-        <button
-                    type="submit"
-                    className="mb-6 w-full  rounded-full bg-sky-500 text-black px-6 pt-2.5 pb-2 text-lg font-serif font-bold uppercase leading-normal lg:mb-0"
-                  >
-                    Contact us
-                  </button>
-                  </Link>
-     
     
-    
+    <div class="flex justify-center mb-4">
+  <Link to="/contactus">
+    <button
+      type="submit"
+      className="w-96 rounded-full bg-sky-500 text-black px-6 pt-2.5 pb-2 text-lg font-serif font-bold uppercase leading-normal lg:mb-4"
+    >
+      Contact us
+    </button>
+  </Link>
+</div>  
     </>
   );
 }
