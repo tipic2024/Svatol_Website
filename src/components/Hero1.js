@@ -31,9 +31,9 @@ export default function Doctors_Img() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <h1 className='text-4xl text-center mt-10 font-bold'>Meet our Doctors</h1>
+          <h1 className='text-4xl text-center mt-10 font-bold font-serif'>Meet our Doctors</h1>
         </motion.div>
-        <h1 className='text-center mt-5 '>
+        <h1 className='text-center mt-5 font-serif'>
         “Meet our team of doctors dedicated to offering a diverse array of programs and events designed to deepen your understanding and appreciation of Ayurveda. Our experts are committed to guiding you through personalized wellness journeys and holistic healing practices. Join us to explore the timeless wisdom of Ayurveda and achieve a balanced, healthy lifestyle
         </h1>
       </div>
@@ -59,10 +59,63 @@ export default function Doctors_Img() {
               className="lg:w-40 w-72 rounded-full"
             />
           </motion.div>
-          <h1 className='lg:mt-10 mt-5 text-lg font-bold'>Dr.Samir</h1>
-          <h2 className='text-sm'>BAMS, MD (Ayurveda), IMS-BHU, Gold Medalist
+          <h1 className='lg:mt-10 mt-5 text-lg font-bold font-serif'>Dr.Samir</h1>
+          <h2 className='text-sm font-serif'>BAMS, MD (Ayurveda), IMS-BHU, Gold Medalist
 <br></br>MBA, Indian School of Business      
 </h2>
+<Link className='mb-3  ml-4 mt-3 sm:mb-0 sm:mr-3 ' to="/book_appointment">
+    <button
+      className='
+        content-center 
+        font-serif 
+        font-bold 
+        text-xs 
+        p-2 
+        uppercase 
+        text-white 
+        hover:text-[#7B553C] 
+        hover:bg-[#90EE90] 
+        bg-[#003430] 
+        border-[#2f902f] 
+        border-solid 
+        border-0 
+        drop-shadow-mds
+        mb-4
+        rounded-md
+      '
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      Book OPD Appointment
+    </button>
+  </Link>
+  <Link className='sm:ml-1' to="/International">
+    <button
+      className='
+        content-center 
+        font-serif 
+        font-bold 
+        text-xs 
+        p-2 
+        uppercase 
+        text-white 
+        hover:text-[#7B553C] 
+        hover:bg-[#90EE90] 
+        bg-[#003430] 
+        border-[#2f902f] 
+        border-solid 
+        border-0 
+        drop-shadow-mds
+        mb-4
+        rounded-md
+
+      '
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      International / Online Appointment
+    </button>
+  </Link>
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -87,10 +140,63 @@ export default function Doctors_Img() {
               className="lg:w-40 w-72 rounded-full"                             
             />                 
           </motion.div>
-          <h1 className='lg:mt-10 mt-5 font-bold'>Dr.Aditi</h1>
-          <h2 className='text-sm'>BAMS, MD (Ayurveda), IMS-BHU, Gold Medalist
+          <h1 className='lg:mt-10 mt-5 font-bold font-serif'>Dr.Aditi</h1>
+          <h2 className='text-sm font-serif'>BAMS, MD (Ayurveda), IMS-BHU, Gold Medalist
 <br></br>MBA, Indian School of Business      
 </h2>
+<Link className='mb-3 ml-4  mt-3 sm:mb-0 sm:mr-3 ' to="/book_appointment">
+    <button
+      className='
+        content-center 
+        font-serif 
+        font-bold 
+        text-xs 
+        p-2 
+        uppercase 
+        text-white 
+        hover:text-[#7B553C] 
+        hover:bg-[#90EE90] 
+        bg-[#003430] 
+        border-[#2f902f] 
+        border-solid 
+        border-0 
+        drop-shadow-mds
+        mb-4
+        rounded-md
+      '
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      Book OPD Appointment
+    </button>
+  </Link>
+  <Link className='sm:ml-1' to="/International">
+    <button
+      className='
+        content-center 
+        font-serif 
+        font-bold 
+        text-xs 
+        p-2 
+        uppercase 
+        text-white 
+        hover:text-[#7B553C] 
+        hover:bg-[#90EE90] 
+        bg-[#003430] 
+        border-[#2f902f] 
+        border-solid 
+        border-0 
+        drop-shadow-mds
+        mb-4
+        rounded-md
+
+      '
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      International / Online Appointment
+    </button>
+  </Link>
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -115,10 +221,63 @@ export default function Doctors_Img() {
               className="lg:w-40 w-72 rounded-full"
             />
           </motion.div>
-          <h1 className='lg:mt-10 mt-5 font-bold'>Dr.Prajwal</h1>
-          <h2 className='text-sm'>BAMS, MD (Ayurveda), IMS-BHU, Gold Medalist
+          <h1 className='lg:mt-10 mt-5 font-bold font-serif'>Dr.Prajwal</h1>
+          <h2 className='text-sm font-serif'>BAMS, MD (Ayurveda), IMS-BHU, Gold Medalist
 <br></br>MBA, Indian School of Business      
 </h2>
+<Link className='mb-3 ml-4 mt-3 sm:mb-0 sm:mr-3 ' to="/book_appointment">
+    <button
+      className='
+        content-center 
+        font-serif 
+        font-bold 
+        text-xs 
+        p-2 
+        uppercase 
+        text-white 
+        hover:text-[#7B553C] 
+        hover:bg-[#90EE90] 
+        bg-[#003430] 
+        border-[#2f902f] 
+        border-solid 
+        border-0 
+        drop-shadow-mds
+        mb-4
+        rounded-md
+      '
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      Book OPD Appointment
+    </button>
+  </Link>
+  <Link className='sm:ml-1' to="/International">
+    <button
+      className='
+        content-center 
+        font-serif 
+        font-bold 
+        text-xs 
+        p-2 
+        uppercase 
+        text-white 
+        hover:text-[#7B553C] 
+        hover:bg-[#90EE90] 
+        bg-[#003430] 
+        border-[#2f902f] 
+        border-solid 
+        border-0 
+        drop-shadow-mds
+        mb-4
+        rounded-md
+
+      '
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      International / Online Appointment
+    </button>
+  </Link>
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}

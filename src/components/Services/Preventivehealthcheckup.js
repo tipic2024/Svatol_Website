@@ -12,10 +12,10 @@ export default function Preventivehealthcheckup() {
       </div>
       <div className="sm:w-1/2 p-5 text-center lg:text-right animate__animated animate__fadeInRight">
         <div className="text">
-          <h2 className="my-4 font-bold text-3xl sm:text-4xl text-amber-900 text-center mt-0">
+          <h2 className="my-4 font-bold font-serif text-3xl sm:text-4xl text-amber-900 text-center mt-0">
             Preventive Health Checkup <span className="text-amber-900"></span>
           </h2>
-          <p className="text-amber-950 text-justify">
+          <p className="text-amber-950 text-justify font-serif">
             Preventive health checkups are comprehensive examinations aimed at identifying potential health
             risks and promoting early detection and prevention of diseases. These checkups typically involve
             a series of medical tests, screenings, and evaluations tailored to an individual's age, gender,
@@ -27,7 +27,7 @@ export default function Preventivehealthcheckup() {
           </p>
           <div className="mt-6 flex justify-center content-center animate__animated animate__zoomIn">
             <Link to="/book_appointment">
-              <button className="m-1.5 py-2.5 px-5 rounded-md border-2 border-teal-400 bg-cyan-500 text-white font-semibold uppercase hover:text-black hover:border-blue-500 hover:bg-cyan-200">
+              <button className="m-1.5 py-2.5 px-5 rounded-md font-serif border-2 border-teal-400 bg-cyan-500 text-white font-semibold uppercase hover:text-black hover:border-blue-500 hover:bg-cyan-200">
                 Book Appointment
               </button>
             </Link>
