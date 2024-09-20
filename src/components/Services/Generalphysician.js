@@ -13,10 +13,10 @@ export default function Genralphysician() {
       </div>
       <div className="sm:w-1/2 p-5 text-center lg:text-right animate__animated animate__fadeInRight">
         <div className="text">
-          <h2 className="my-4 font-bold text-3xl sm:text-4xl text-amber-900 text-center mt-0">
+          <h2 className="my-4 font-bold font-serif  text-3xl sm:text-4xl text-amber-900 text-center mt-0">
             General Physician <span className="text-amber-900"></span>
           </h2>
-          <p className="text-amber-950 text-justify">
+          <p className="text-amber-950 text-justify font-serif">
             General physicians, also known as primary care physicians or general practitioners, play a crucial role in
             providing comprehensive healthcare services to individuals of all ages. These medical professionals are
             typically the first point of contact for patients seeking medical care and are trained to diagnose, treat,
@@ -29,7 +29,7 @@ export default function Genralphysician() {
           </p>
           <div className="mt-6 flex justify-center content-center animate__animated animate__zoomIn">
             <Link to="/book_appointment">
-              <button className="m-1.5 py-2.5 px-5 rounded-md border-2 border-teal-400 bg-cyan-500 text-white font-semibold uppercase hover:text-black hover:border-blue-500 hover:bg-cyan-200">
+              <button className="m-1.5 py-2.5 px-5 rounded-md font-serif border-2 border-teal-400 bg-cyan-500 text-white font-semibold uppercase hover:text-black hover:border-blue-500 hover:bg-cyan-200">
                 Book Appointment
               </button>
             </Link>

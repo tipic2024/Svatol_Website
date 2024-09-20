@@ -39,7 +39,6 @@ export default function International_Appointment() {
     const day = date.getDay();
     return day === 0 || day === 6; // 0 = Sunday, 6 = Saturday
   };
-
   const validateMobile = (mobile) => {
     const mobileRegex = /^[0-9]{10}$/;
     if (!mobileRegex.test(mobile)) {
@@ -54,13 +53,44 @@ export default function International_Appointment() {
       });
     }
   };
+  
+
+  const validateName = (name) => {
+    const nameRegex = /^[A-Za-z]+$/;
+    if (!nameRegex.test(name)) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        patientName: 'Patient name must contain only alphabetic characters.',
+      }));
+    } else {
+      setErrors((prevErrors) => {
+        const { patientName, ...rest } = prevErrors;
+        return rest;
+      });
+    }
+  };
+  const validateInput = (id, value) => {
+    let error = '';
+
+    if (id === 'Email') {
+      // Basic email validation using regex
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!value || !emailRegex.test(value)) {
+        error = 'Please enter a valid email address';
+      }
+    }
+
+    setErrors({ ...errors, [id]: error });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.patientMobile || errors.patientMobile) {
+    if (!formData.patientMobile || errors.patientMobile || !formData.patientName || errors.patientName) {
+      // If mobile number or patient name is invalid, set errors and return
       setErrors((prevErrors) => ({
         ...prevErrors,
-        patientMobile: 'Mobile number must be 10 digits long and contain only numbers.',
+        patientMobile: !formData.patientMobile ? 'Mobile number is required.' : errors.patientMobile,
+        patientName: !formData.patientName ? 'Patient name is required.' : errors.patientName,
       }));
       return;
     }
@@ -77,6 +107,7 @@ export default function International_Appointment() {
         enquiryType: '',
         timeSlot: '',
       });
+      setErrors({});
     } catch (error) {
       console.error('There was an error!', error);
       setSubmissionStatus('error');
@@ -87,7 +118,7 @@ export default function International_Appointment() {
     <section className="bg-gradient-to-br from-gray-200 to-white pb-16">
       <div className="container mx-auto px-4 lg:px-8 py-8">
         <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
-          <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">Schedule an Appointment</h1>
+          <h1 className="text-3xl font-bold font-serif text-center text-gray-800 mb-8">Schedule an Appointment</h1>
           {submissionStatus === 'success' && (
             <div className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-6" role="alert">
               <p>Form submitted successfully!</p>
@@ -99,14 +130,77 @@ export default function International_Appointment() {
             </div>
           )}
           <form onSubmit={handleSubmit}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="mb-4">
+                <label htmlFor="patientName" className="block text-sm font-medium text-gray-700 mb-1">
+                  Patient Name
+                </label>
+                <input
+                  type="text"
+                  id="patientName"
+                  className="w-64 border border-gray-300 rounded py-2 px-3 leading-tight focus:outline-none focus:border-primary focus:bg-white"
+                  value={formData.patientName}
+                  onChange={handleChange}
+                />
+              </div>
+
+              
+              <div className="mb-4">
+                <label htmlFor="patientMobile" className="block text-sm font-medium text-gray-700 mb-1">
+                  Patient Mobile
+                </label>
+                <input
+                  type="text"
+                  id="patientMobile"
+                  className="w-64 border border-gray-300 rounded py-2 px-3 leading-tight focus:outline-none focus:border-primary focus:bg-white"
+                  value={formData.patientMobile}
+                  onChange={handleChange}
+                />
+                {errors.patientMobile && (
+                  <p className="text-red-500 text-sm mt-1">{errors.patientMobile}</p>
+                )}
+              </div>
+
+              <div className="mb-4">
+                <label htmlFor="patientMobile" className="block text-sm font-medium text-gray-700 mb-1">
+                  Email
+                </label>
+                <input
+                  type="text"
+                  id="Email"
+                  className="w-64 border border-gray-300 rounded py-2 px-3 leading-tight focus:outline-none focus:border-primary focus:bg-white"
+                  value={formData.Email}
+                  onChange={handleChange}
+                />
+                {errors.Email && (
+                  <p className="text-red-500 text-sm mt-1">{errors.Email}</p>
+                )}
+              </div>
+
+              <div className="mb-4">
+                <label htmlFor="appointmentDate" className="block text-sm font-medium text-gray-700 mb-1">
+                  Appointment Date
+                </label>
+                
+                <DatePicker
+                  selected={formData.appointmentDate}
+                  onChange={handleDateChange}
+                  className="w-64 border border-gray-300 rounded py-2 px-3 leading-tight focus:outline-none focus:border-primary focus:bg-white"
+                  placeholderText="Select a date"
+                  filterDate={(date) => {
+                    const today = new Date();
+                    return date >= today && !isWeekend(date);
+                  }}
+                  disabled={!formData.enquiryType}
+                />
+              </div>
               <div className="mb-4">
                 <label htmlFor="enquiryType" className="block text-sm font-medium text-gray-700 mb-1">
                   Enquiry Type
                 </label>
                 <select
                   id="enquiryType"
-                  className="w-full border border-gray-300 rounded py-2 px-3 leading-tight focus:outline-none focus:border-primary focus:bg-white"
+                  className="w-64 border border-gray-300 rounded py-2 px-3 leading-tight focus:outline-none focus:border-primary focus:bg-white"
                   value={formData.enquiryType}
                   onChange={handleChange}
                 >
@@ -116,15 +210,14 @@ export default function International_Appointment() {
                   <option value="Dermatology">60-min Online Consultation</option>
                   <option value="Preventive Health Checkup">30-min Online Consultation</option>
                 </select>
-              </div>
-
+              </div> 
               <div className="mb-4">
                 <label htmlFor="timeSlot" className="block text-sm font-medium text-gray-700 mb-1">
                   Preferred Time Slot
                 </label>
                 <select
                   id="timeSlot"
-                  className="w-full border border-gray-300 rounded py-2 px-3 leading-tight focus:outline-none focus:border-primary focus:bg-white"
+                  className="w-64 border border-gray-300 rounded py-2 px-3 leading-tight focus:outline-none focus:border-primary focus:bg-white"
                   value={formData.timeSlot}
                   onChange={handleChange}
                   disabled={!formData.enquiryType}
@@ -141,28 +234,11 @@ export default function International_Appointment() {
                   <option value="Evening (05.00 pm)">Evening (05.00 pm)</option>
                   <option value="Evening (05.30 pm)">Evening (05.30 pm)</option>
                 </select>
-              </div>
-
-              <div className="mb-4">
-                <label htmlFor="appointmentDate" className="block text-sm font-medium text-gray-700 mb-1">
-                  Appointment Date
-                </label>
-                <DatePicker
-                  selected={formData.appointmentDate}
-                  onChange={handleDateChange}
-                  className="w-full border border-gray-300 rounded py-2 px-3 leading-tight focus:outline-none focus:border-primary focus:bg-white"
-                  placeholderText="Select a date"
-                  filterDate={(date) => {
-                    const today = new Date();
-                    return date >= today && !isWeekend(date);
-                  }}
-                  disabled={!formData.enquiryType}
-                />
-              </div>
+              </div> 
             </div>
             <button
               type="submit"
-              className="ml-96 bg-primary hover:bg-primary-dark bg-slate-600 text-white py-2 px-4 rounded mt-6 focus:outline-none focus:ring-2 focus:ring-primary"
+              className="ml-96 justify-between  bg-primary hover:bg-primary-dark bg-slate-600 text-white py-2 px-4 rounded mt-6 focus:outline-none focus:ring-2 focus:ring-primary"
               disabled={!formData.enquiryType || !formData.timeSlot || !formData.appointmentDate}
             >
               BOOK APPOINTMENT

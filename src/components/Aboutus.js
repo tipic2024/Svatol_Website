@@ -69,7 +69,7 @@ const Aboutus = () => {
           transition={{ delay: 0.5, duration: 0.5 }}
         >
           <div className="text">
-            <h2 className="my-4 font-bold text-3xl sm:text-4xl text-amber-900 text-center mt-0">
+            <h2 className="my-4 font-bold font-serif text-3xl sm:text-4xl text-amber-900 text-center mt-0">
               <motion.span
                 animate={{ color: isVisible ? '#7B553C' : '#000000' }}
                 transition={{ duration: 0.5 }}
@@ -88,8 +88,7 @@ const Aboutus = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: isVisible ? 1 : 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
-              className="text-amber-950 text-justify"
-            >
+              className="text-amber-950 text-justify font-serif">
               The Ayurveda Hospital functions as a haven for holistic healing, beginning with a thorough 
 assessment of the patient's dosha, medical history, and current health condition. The 
 process involves experienced Ayurvedic physicians who employ diagnostic techniques such 
@@ -107,7 +106,7 @@ patients undergo rejuvenating therapies to address specific health concerns.
             >
               <div className="mt-6 flex justify-center content-center">
                 <Link to="/what_we_stands_for">
-                  <button className="m-1.5 py-2.5 px-5 rounded-md border-2 border-teal-400 text-white font-semibold uppercase bg-blue-400 hover:text-black hover:border-blue-500">
+                  <button className="m-1.5 py-2.5 px-5 font-serif  rounded-md border-2 border-teal-400 text-white font-semibold uppercase bg-blue-400 hover:text-black hover:border-blue-500">
                     READ MORE
                   </button>
                 </Link>
@@ -124,7 +123,7 @@ patients undergo rejuvenating therapies to address specific health concerns.
 const WhatWeStandFor = () => {
   return (
     <div className="max-w-screen-xl mx-auto bg-[#FFF6E7] p-10">
-      <h1 className="text-3xl font-bold text-amber-900">What We Stand For</h1>
+      <h1 className="text-3xl font-bold font-serif text-amber-900">What We Stand For</h1>
       <p className="text-amber-950 text-justify mt-4">
         This is the page that describes what we stand for.
       </p>

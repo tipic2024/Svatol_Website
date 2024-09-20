@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Services() {
   return (
+    <>
     <AnimatePresence>
       <motion.div
         className='flex flex-wrap justify-center items-center gap-4 p-4 mt-0 bg-[#FFF6E7]'
@@ -26,7 +27,7 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/Oncology.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-xl text-center mt-5'>Oncology</h1>
+            <h1 className='text-black text-xl font-serif text-center mt-5'>Oncology</h1>
           </motion.div></Link>
 
           <Link to="/sr_Dermatology">
@@ -36,7 +37,7 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/Dermatology.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-xl text-center mt-5'>Dermatology</h1>
+            <h1 className='text-black text-xl font-serif text-center mt-5'>Dermatology</h1>
           </motion.div>
           </Link>
          
@@ -47,7 +48,7 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/General_Physician.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-lg text-center mt-5'>General_Physician</h1>
+            <h1 className='text-black text-lg font-serif text-center mt-5'>General_Physician</h1>
           </motion.div>
           </Link>
         </motion.div>
@@ -66,12 +67,12 @@ function Services() {
             whileHover={{ scale: 1.05 }}
           />
           <div>
-  <h1 className='mt-5 text-[#003425] text-center text-lg sm:text-xl font-bold  md:text-xl'>
+  <h1 className='mt-5 text-[#003425] text-center  font-serif text-lg sm:text-xl font-bold  md:text-xl'>
   One click away  healthy lifestyle..
   </h1>
 </div>
 
-<div className='flex flex-col sm:flex-row items-center justify-center mt-5 '>
+<div className='flex flex-col sm:flex-row items-center font-serif justify-center mt-5 '>
   <Link className='mb-3 sm:mb-0 sm:mr-3' to="/book_appointment">
     <button
       className='
@@ -145,8 +146,8 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/Preventive_Health_Checkup.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-xl text-center mt-5'>Health</h1>
-            <h1 className='text-black text-xl text-center'>Checkup</h1>
+            <h1 className='text-black text-xl font-serif text-center mt-5'>Health</h1>
+            <h1 className='text-black text-xl font-serif text-center'>Checkup</h1>
           </motion.div>
           </Link>
 
@@ -157,7 +158,7 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/Panchkarma.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-xl text-center mt-5'>Panchkarma</h1>
+            <h1 className='text-black text-xl font-serif text-center mt-5'>Panchkarma</h1>
           </motion.div>
           </Link>
 
@@ -168,13 +169,66 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/Annual_Routin_Check.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-xl text-center mt-5'>Annual Routin</h1>
-            <h1 className='text-black text-xl text-center'>Check</h1>
+            <h1 className='text-black text-xl  font-serif text-center mt-5'>Annual Routin</h1>
+            <h1 className='text-black text-xl font-serif text-center'>Check</h1>
           </motion.div>
           </Link>
         </motion.div>
       </motion.div>
     </AnimatePresence>
+    <div class="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Frequently asked questions</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white shadow-md rounded-md p-6">
+                <h3 class="text-xl font-bold mb-4">Anim pariatur cliche reprehenderit?</h3>
+                <p class="text-gray-700 text-base">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt autem numquam dolore molestias aperiam culpa alias veritatis architecto eos, molestiae vitae ex eligendi libero eveniet dolorem, doloremque rem aliquid perferendis.
+                </p>
+            </div>
+            <div class="bg-white shadow-md rounded-md p-6">
+                <h3 class="text-xl font-bold mb-4">Non cupidatat skateboard dolor brunch?</h3>
+                <p class="text-gray-700 text-base">
+                    Distinctio corporis, iure facere ducimus quos consectetur ipsa ut magnam autem doloremque ex! Id, sequi. Voluptatum magnam sed fugit iusto minus et suscipit? Minima sunt at nulla tenetur, numquam unde quod modi magnam ab deserunt ipsam sint aliquid dolores libero repellendus cupiditate mollitia quidem dolorem odit
+                </p>
+            </div>
+            <div class="bg-white shadow-md rounded-md p-6">
+                <h3 class="text-xl font-bold mb-4">Praesentium voluptatibus temporibus consequatur non aspernatur?</h3>
+                <p class="text-gray-700 text-base">
+                    Minima sunt at nulla tenetur, numquam unde quod modi magnam ab deserunt ipsam sint aliquid dolores libero repellendus cupiditate mollitia quidem dolorem. Voluptatum magnam sed fugit iusto minus et suscipit? Minima sunt at nulla tenetur?
+                </p>
+            </div>
+            <div class="bg-white shadow-md rounded-md p-6">
+                <h3 class="text-xl font-bold mb-4">Laudantium perferendis, est alias iure ut veniam suscipit dolorem fugit?</h3>
+                <p class="text-gray-700 text-base">
+                    Et ipsam corporis earum ea ut quae cum non iusto blanditiis ipsum dolor eius reiciendis, velit adipisci quas. Numquam unde quod modi magnam ab deserunt ipsam sint aliquid dolores libero repellendus cupiditate mollitia quidem dolorem odit
+                </p>
+            </div>
+            <div class="bg-white shadow-md rounded-md p-6">
+                <h3 class="text-xl font-bold mb-4">Numquam unde quod modi magnam ab deserunt ipsam sint aliquid dolores libero repellendus cupiditate mollitia quidem dolorem odit?</h3>
+                <p class="text-gray-700 text-base">
+                    Distinctio corporis, iure facere ducimus quos consectetur ipsa ut magnam autem doloremque ex! Id, sequi. Voluptatum magnam sed fugit iusto minus et suscipit? Minima sunt at nulla tenetur, numquam unde quod modi magnam ab deserunt ipsam sint aliquid dolores libero repellendus cupiditate mollitia quidem dolorem odit
+                </p>
+            </div>
+            <div class="bg-white shadow-md rounded-md p-6">
+                <h3 class="text-xl font-bold mb-4">Distinctio corporis, iure facere ducimus?</h3>
+                <p class="text-gray-700 text-base">
+                    Eaque eos corrupti debitis tenetur repellat, beatae quibusdam incidunt, fuga non iste dignissimos officiis nam officia obcaecati commodi ratione qui nesciunt.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex justify-center mb-4">
+  <Link to="/contactus">
+    <button
+      type="submit"
+      className="w-96 rounded-full bg-sky-500 text-black px-6 pt-2.5 pb-2 text-lg font-serif font-bold uppercase leading-normal lg:mb-4"
+    >
+      Contact us
+    </button>
+  </Link>
+</div>  
+    </>
   );
 }
 
