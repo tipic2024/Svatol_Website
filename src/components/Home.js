@@ -18,6 +18,9 @@ import SuccessStories from './About_Svtol_Read_More/SussessStories'
 import FeaturdArticles from './About_Svtol_Read_More/FeaturdArticles'
 import Key_services from './key_services'
 import H1 from './H1'
+import HerosectionForm from './HerosectionForm'
+import { Slider } from '@material-tailwind/react'
+import HeroPage from './HeroPage'
 
 export default function Home() {
 
@@ -27,7 +30,15 @@ export default function Home() {
 
       {/* <GA/> */}
 
-      <H1/>
+     
+      
+      {/* <H1/>
+      <HerosectionForm/> */
+      }
+
+      <HeroPage/>
+      
+      
       
       <Doctors_Img/>
       <Key_services/>

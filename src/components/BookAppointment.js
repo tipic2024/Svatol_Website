@@ -86,14 +86,14 @@ export default function BookEvent() {
             </div>
           )}
           <div className="flex flex-col">
-            <h1 className=' md:text-3xl text-2xl font-serif font-bold text-center text-[#7B553C] mb-10 '>Patient  Appointment  Form</h1>
+            <h1 className=' md:text-3xl text-2xl font-serif font-bold text-center text-[#7B553C] '>Patient  Appointment  Form</h1>
             <div className="flex flex-wrap">
-              <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+              <div className="c w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
                 <form onSubmit={handleSubmit}>
-                  <div className="relative mb-6">
+                  <div className="relative mb-6 lg:mb-3">
                     <input
                       type="text"
-                      className={`peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary ${formData.patientName ? 'placeholder-shown:-translate-y-[0.9rem] placeholder-shown:scale-[0.8] placeholder-shown:text-primary' : ''}`}
+                      className={`peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-2 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary ${formData.patientName ? 'placeholder-shown:-translate-y-[0.9rem] placeholder-shown:scale-[0.8] placeholder-shown:text-primary' : ''}`}
                       id="patientName"
                       value={formData.patientName}
                       onChange={handleChange}
@@ -210,7 +210,7 @@ export default function BookEvent() {
               </div>
               <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
                 <div className="flex flex-wrap">
-                  <div className="flex items-center mb-6">
+                  <div className=" items-center mb-6">
                     <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mr-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
