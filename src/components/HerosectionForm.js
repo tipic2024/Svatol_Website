@@ -76,8 +76,8 @@ export default function HerosectionForm() {
   return (
     <section className=" ">
       
-      <div className="container justify-center lg:justify-end px-full lg:px-full  mt-32 ">
-        <div className="block   bg-[hsla(0,0%,100%,0.8)]  py-7 -mt-[100px] backdrop-blur-[30px] border border-gray-300">
+      <div className="container justify-center lg:justify-end px-full lg:px-full  mt-32  ">
+        <div className="block    bg-white py-7 -mt-[100px] backdrop-blur-[30px] border lg:border-l-0 md:border-l-0 border-gray-300">
           {submissionStatus === 'success' && (
             <div className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-6" role="alert">
               <p>Form submitted successfully!</p>
@@ -93,49 +93,49 @@ export default function HerosectionForm() {
             <div className="flex flex-wrap bg-green">
               <div className=" w-full shrink-0 grow-0 basis-auto  lg:mb-0 lg:w-full lg:px-6 ">
                 <form onSubmit={handleSubmit} className=''>
-                  <div className="relative mb-2">
+                  <div className="relative mb-3 px-3">
                     <input
                       type="text"
-                      className={`peer block min-h-[auto] w-full  rounded border-2 bg-transparent py-[0.2rem] lg:py-[0.3rem] px-2 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary ${formData.patientName ? 'placeholder-shown:-translate-y-[0.9rem] placeholder-shown:scale-[0.8] placeholder-shown:text-primary' : ''}`}
+                      className={`peer block min-h-[auto] w-full   rounded border-2 bg-transparent py-[0.2rem] md:py-[0.1rem] lg:py-[0.3rem] px-3  leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary ${formData.patientName ? 'placeholder-shown:-translate-y-[0.9rem] placeholder-shown:scale-[0.8] placeholder-shown:text-primary' : ''}`}
                       id="patientName"
                       value={formData.patientName}
                       onChange={handleChange}
                       placeholder=" "
                     />
                     <label
-                      className={`pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.4rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.patientName ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
+                      className={`pointer-events-none absolute top-0 left-3 pl-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.4rem] md:pt-[0.2rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.patientName ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
                       htmlFor="patientName"
                     >
                       Patient Name
                     </label>
                   </div>
-                  <div className="relative mb-2">
+                  <div className="relative mb-3 px-3">
                     <input
                       type="email"
-                      className={`peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.2rem] lg:py-[0.3rem] px-2 lg:px-32 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary ${formData.patientEmail ? 'placeholder-shown:-translate-y-[0.9rem] placeholder-shown:scale-[0.8] placeholder-shown:text-primary' : ''}`}
+                      className={`peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.2rem] md:py-[0.1rem] lg:py-[0.3rem] px-2 lg:px-32 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary ${formData.patientEmail ? 'placeholder-shown:-translate-y-[0.9rem] placeholder-shown:scale-[0.8] placeholder-shown:text-primary' : ''}`}
                       id="patientEmail"
                       value={formData.patientEmail}
                       onChange={handleChange}
                       placeholder=" "
                     />
                     <label
-                      className={`pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate  pt-[0.4rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.patientEmail ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
+                      className={`pointer-events-none absolute top-0 pl-3 left-3 mb-0 max-w-[90%] origin-[0_0] truncate  pt-[0.4rem] md:pt-[0.2rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.patientEmail ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
                       htmlFor="patientEmail"
                     >
                       Patient Email address
                     </label>
                   </div>
-                  <div className="relative mb-2">
+                  <div className="relative mb-3 px-3">
                     <input
                       type="text"
-                      className={`peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.2rem] lg:py-[0.3rem] px-2 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary ${formData.patientMobile ? 'placeholder-shown:-translate-y-[0.9rem] placeholder-shown:scale-[0.8] placeholder-shown:text-primary' : ''}`}
+                      className={`peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.2rem] md:py-[0.1rem] lg:py-[0.3rem] px-8 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary ${formData.patientMobile ? 'placeholder-shown:-translate-y-[0.9rem] placeholder-shown:scale-[0.8] placeholder-shown:text-primary' : ''}`}
                       id="patientMobile"
                       value={formData.patientMobile}
                       onChange={handleChange}
                       placeholder=" "
                     />
                     <label
-                      className={`pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.4rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.patientMobile ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
+                      className={`pointer-events-none absolute top-0 pl-3 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.4rem] md:pt-[0.2rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.patientMobile ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
                       htmlFor="patientMobile"
                     >
                       Patient Mobile
@@ -143,7 +143,7 @@ export default function HerosectionForm() {
                     {errors.patientMobile && <p className="text-red-600 text-sm">{errors.patientMobile}</p>}
                   </div>
                   
-                  <div className="relative mb-2">
+                  <div className="relative mb-3 px-3">
                     <select
                       id="enquiryType"
                       className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.2rem]  lg:py-[0.3rem] px-2 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary"
@@ -158,13 +158,13 @@ export default function HerosectionForm() {
                       <option value="Annual Routin Check">Annual Routin Check</option>
                     </select>
                     <label
-                      className={`pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.4rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.enquiryType ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
+                      className={`pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.4rem] md:pt-[0.2rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.enquiryType ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
                       htmlFor="enquiryType"
                     >
                      
                     </label>
                   </div>
-                  <div className="relative mb-2">
+                  <div className="relative mb-2 px-3">
                     <select
                       id="timeSlot"
                       className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.2rem] lg:py-[0.3rem] px-2 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary"
@@ -184,11 +184,11 @@ export default function HerosectionForm() {
                     </label>
                   </div>
 
-                  <div className="relative mb-3">
+                  <div className="relative mb-3 px-3">
                     <DatePicker
                       selected={formData.appointmentDate}
                       onChange={handleDateChange}
-                      className="peer block min-h-[auto]  w-full rounded border-2 bg-transparent py-[0.2rem] lg:py-[0.3rem] px-2 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary"
+                      className="peer block min-h-[auto]  w-full rounded border-2 bg-transparent py-[0.2rem] md:py-[0.1rem] lg:py-[0.3rem] pl-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary"
                       placeholderText="Select a date"
                       filterDate={(date) => {
                         const today = new Date();
@@ -203,12 +203,14 @@ export default function HerosectionForm() {
                     </label>
                   </div>
                  
+                  <div className='px-3 md:mb-0 '>
                   <button
                     type="submit"
-                    className=" w-full rounded bg-sky-500 text-white px-2 pt-1 lg:py-3 text-xs font-medium uppercase leading-normal lg:mb-0"
+                    className=" w-full  rounded bg-sky-500 text-white pt-1 md:pt-2 lg:py-3 text-md md:text-xs lg:text-sm font-medium uppercase leading-normal  md:mb-0 "
                   >
                     BOOK APPOINMENT
                   </button>
+                  </div>
                 </form>
               </div>
              
