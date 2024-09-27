@@ -76,18 +76,25 @@ export default function NB() {
                             <li>|</li>
 
                             <li className="text-gray-900 hover:text-[#7B553C] font-bold">
-                                <Link to="/Our_Doctors" onClick={handleLinkClick}>OUR DOCTORS</Link>
+                                <Link to="/Directors" onClick={handleLinkClick}>Directors</Link>
                             </li>
                             <li>|</li>
-                            <li className="group max-lg:border-b max-lg:py-2 relative">
+                           
+
+                            {/* change this   */}
+                            <li className="text-gray-900 hover:text-[#7B553C] font-bold">
+                                <Link to="/Events" onClick={handleLinkClick}>Events</Link>
+                            </li>
+
+                                {/* <li className="group max-lg:border-b max-lg:py-2 relative">
                                 <a href="javascript:void(0)" className="hover:text-[#7B553C] text-gray-900 text-[15px] font-bold lg:hover:fill-[#007bff] block">
                                     EVENT
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" className="ml-1 inline-block" viewBox="0 0 24 24">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" className="ml-1 inline-block" viewBox="0 0 24 24">
                                         <path
                                             d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
                                             data-name="16" data-original="#000000"
                                         />
-                                    </svg>
+                                    </svg> 
                                 </a>
                                 <ul className="absolute hidden group-hover:block shadow-lg pt-4 bg-white/50 backdrop-blur-3xl px-6 pb-4 pt-6 space-y-3 lg:top-5 max-lg:top-8 -left-6 min-w-[250px] z-50">
                                     <li className="border-b py-2">
@@ -96,9 +103,9 @@ export default function NB() {
                                     <li className="border-b py-2">
                                         <Link to="/what_we_stands_for" onClick={handleLinkClick} className="hover:text-[#7B553C] text-black text-[15px] font-bold block uppercase">WORKSHOP</Link>
 
-                </li>
+                                     </li>
                                 </ul>
-                                </li>
+                                </li>*/}
 
                             <li>|</li>
                           

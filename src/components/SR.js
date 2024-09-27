@@ -27,14 +27,18 @@ export function SR() {
               RESEARCH FINDINGS
             </Typography>
             <Typography className="text-balance font-semibold">
-              • Research Articles and Studies:<br />
+              {/* • Research Articles and Studies:<br />
               • Clinical Trials:<br />
               • Meta-Analyses and Systematic Reviews:<br />
               • Case Studies and Patient Testimonials:<br />
-              • Expert commentaries and Interviews:
-            </Typography>
+              • Expert commentaries and Interviews:*/}
+             Overview of Ayurveda, its ancient origins and core principles like Doshas 
+             (Vata, Pitta, Kapha). It describes diagnostic methods, such as pulse and tongue analysis, 
+             and therapeutic approaches like herbal remedies, dietary guidance, and detox procedures. 
+             Recent studies on its effectiveness and research on key herbs are also summarized...
+            </Typography> 
           </CardBody>
-          <CardFooter className="pt-0 lg:mt-16">
+          <CardFooter className="pt-0 lg:mt-2">
             <Link to="/Reserch"><Button>Read More</Button></Link>
           </CardFooter>
         </Card>
@@ -48,17 +52,20 @@ export function SR() {
                 SUCCESS STORIES
               </Typography>
               <Typography className="text-balance font-semibold">
-                • Patient Profiles:<br />
+                {/* • Patient Profiles:<br />
                 • Health Challenges:<br />
                 • Treatment Journey:<br />
                 • Progress and Results:<br />
                 • Personal Testimonials:<br />
                 • Practitioner Insights:<br />
                 • Ethical Considerations:<br />
-                • Diversity and Representation:
+                • Diversity and Representation: */}
+                The section highlights various success stories through patient profiles, detailing health challenges, 
+                treatment journeys, and progress achieved. It includes personal testimonials, insights from practitioners, 
+                and emphasizes ethical considerations. The content also reflects on diversity and representation in healthcare experiences...
               </Typography>
             </CardBody>
-            <CardFooter className="pt-0 lg:mt-16">
+            <CardFooter className="pt-0 lg:mt-2">
               <Link to="/Success_story"><Button>Read More</Button></Link>
             </CardFooter>
           </Card>
@@ -72,7 +79,7 @@ export function SR() {
                 UPCOMING EVENTS
               </Typography>
               <Typography className="text-balance font-semibold">
-                • Savatol Foundation:<br />
+                {/* • Savatol Foundation:<br />
                 • 10,12,13 SEP 2014:<br />
                 • Saswad-Pune:<br />
                 • Registration Information:<br />
@@ -80,10 +87,14 @@ export function SR() {
                 • Featured Topics or Themes:<br />
                 • Target Audience:<br />
                 • Sponsorship and Partnerships:<br />
-                • Social Sharing and Engagement:
+                • Social Sharing and Engagement: */}
+                This section outlines upcoming events organized by the Savatol Foundation, 
+                scheduled for September 10, 12, and 13, 2014, in Saswad-Pune. 
+                It provides registration details, agenda, featured topics, and themes. 
+                Information about the target audience, sponsorships, and opportunities for social sharing and engagement are also included...
               </Typography>
             </CardBody>
-            <CardFooter className="pt-0 lg:mt-5">
+            <CardFooter className="pt-0 lg:mt-2">
               <Link to="/Events"><Button>Read More</Button></Link>
             </CardFooter>
           </Card>
@@ -94,10 +105,11 @@ export function SR() {
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="mb-2 font-bold">
-                FEATURED ARTICLES
+                {/* FEATURED ARTICLES */}
+                Ayurveda Simplified
               </Typography>
               <Typography className="text-balance font-semibold">
-                • Title:<br />
+                {/* • Title:<br />
                 • Authorship:<br />
                 • Publication Date:<br />
                 • Introduction or Teaser:<br />
@@ -105,10 +117,13 @@ export function SR() {
                 • Visual Elements:<br />
                 • Credible Sources and References:<br />
                 • Social Sharing and Bookmarking:<br />
-                • Related Articles or Resources:
+                • Related Articles or Resources: */}
+                Ayurvedic diet and nutrition, focusing on balance through tailored dietary plans for the three doshas—Vata, 
+                Pitta, and Kapha. It emphasizes using the six tastes (sweet, sour, salty, bitter, pungent, astringent) and choosing fresh,
+                seasonal foods. Mindful eating and proper cooking methods are also highlighted, promoting overall health and harmony...
               </Typography>
             </CardBody>
-            <CardFooter className="pt-0">
+            <CardFooter className="pt-0 lg:mt-2">
               <Link to="/FeaturdArticles"><Button>Read More</Button></Link>
             </CardFooter>
           </Card>

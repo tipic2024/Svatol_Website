@@ -7,7 +7,7 @@ import { SR } from './components/SR';
 import Events from './components/Event';
 import Aboutus from './components/Aboutus';
 import Services from './components/Book';
-import Doctor_Details from './components/Doctor_Details';
+// import Doctor_Details from './components/Directors';
 
 
 
@@ -26,6 +26,7 @@ import Paragraph from './components/Paragraph';
 import FeaturdArticles from './components/About_Svtol_Read_More/FeaturdArticles';
 import SuccessStories from './components/About_Svtol_Read_More/SussessStories';
 import International_Appointement from './components/International_Appointement'
+import Directors from './components/Directors';
 // Keyframes for pulsating animation
 const pulse = keyframes`
   0% {
@@ -88,7 +89,7 @@ function App() {
       <Route path="/" element={<Home/>}> </Route>
       <Route path="/Events" element={<Events/>} > </Route>Services
       <Route path="/Services" element={<Services/>}> </Route>
-      <Route path="/Our_Doctors" element={<Doctor_Details/>}> </Route>
+      <Route path="/Directors" element={<Directors/>}> </Route>
       <Route path="/Aboutus" element={<Aboutus/>}> </Route>
       <Route path="/what_we_stands_for" element={<SR/>}> </Route>
       
