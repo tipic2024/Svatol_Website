@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter,BrowserRouter, Route, Routes } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import NB from './components/NB';
 import Home from './components/Home';
@@ -76,7 +76,7 @@ function App() {
         </LoadingContainer>
       ) : (
         <div className="home">
-            <BrowserRouter>
+            <HashRouter>
    <NB/>
    
    
@@ -118,7 +118,7 @@ function App() {
      
     </Routes>
     <Footer/>
-    </BrowserRouter>
+    </HashRouter>
         </div>
       )}
     </div>
