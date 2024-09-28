@@ -88,12 +88,13 @@ function Directors() {
           <div className="order-2 md:order-1 w-full md:w-1/2 flex flex-col lg:mt-14 md:pl-16">
             <div>
               <h1 className="font-serif text-3xl mt-4">Dr. Adesh B. Karkud</h1>
-              <h1 className="">B.A.M.S. MD (Rasashatra)</h1>
+              <h1 className="">B.A.M.S. MD (Ayu) & Panchakarma Expert </h1>
               {/* <h1 className="lg:flex">MBA, Indian School of Business</h1> */}
             </div>
             <div className="mt-4 md:mt-10">
-              <p className="text-md text-balance">Hi! I'm Dr Anam. I completed both my Bachelor's and my Master's at <span className="font-bold">Institute of Medical Sciences - Banaras Hindu University.</span> I also hold a Diploma in Yoga from the same university.</p>
-              <p className="text-md mt-4 md:mt-10">Besides being a practising doctor, I am a researcher in the field of mental health and an author in the field of Diet and Dietetics.</p>
+              <p className="text-md text-balance">I am Dr. Adesh, BAMS MD (Ayu) <span className='font-bold'>Founder of SVATOL Ayurveda Healthcare and Research Foundation</span> With expertise in Panchakarma, I have successfully treated over <span className='font-bold'>1,000 patients,</span> focusing on chronic joint and neurological disorders, fractures, and gut diseases like <span className='font-bold'>Crohn’s, IBS, and hyperacidity.</span></p>
+              <p className="text-md mt-4 md:mt-10">I also manage lifestyle disorders such as <span className='font-bold'>hypertension, thyroid, and diabetes</span> using Panchakarma, with a specialty in Vamana Karma. Additionally, I have researched the effectiveness of alum over soframycin 
+                <br/>in wound healing.</p>
             </div>
             <div>
             <h1 className='mt-5 text-[#003425] text-center text-lg sm:text-xl md:text-xl font-bold do italic '>
@@ -163,24 +164,21 @@ function Directors() {
         </div>
       </div>
 
-
-
-
 <div className="bg-[#FFF6E7] flex justify-center  lg:h-[90vh]">
 <div className="w-[95%] flex flex-col md:flex-row">
   <div className="md:w-1/2 h-64 md:h-auto">
-    <img src={require('./a1.jpeg')} className="object-cover w-full h-full" alt="Doctor" />
+    <img src={require('./Directors_img/Shivraj.jpeg')} className="object-cover w-full h-full" alt="Doctor" />
   </div>
   <div className="w-full md:w-1/2 flex flex-col lg:mt-14 md:pl-16">
     <div>
-      <h1 className="text-sm uppercase">About me</h1>
-      <h1 className="font-serif text-3xl mt-4">Dr Aditi</h1>
-      <h1 className="">BAMS, MD (Ayurveda), IMS-BHU, Gold Medalist</h1>
-      <h1 className="lg:flex">MBA, Indian School of Business</h1>
+      {/* <h1 className="text-sm uppercase">About me</h1> */}
+      <h1 className="font-serif text-3xl mt-4">Dr. Shivraj B. Kale</h1>
+      <h1 className="">B.A.M.S, MSc (Psychology)</h1>
+      {/* <h1 className="lg:flex">MBA, Indian School of Business</h1> */}
     </div>
     <div className="mt-4 md:mt-10">
-      <p className="text-md text-balance">Hi! I'm Dr Anam. I completed both my Bachelor's and my Master's at <span className="font-bold">Institute of Medical Sciences - Banaras Hindu University.</span> I also hold a Diploma in Yoga from the same university.</p>
-      <p className="text-md mt-4 md:mt-10">Besides being a practising doctor, I am a researcher in the field of mental health and an author in the field of Diet and Dietetics.</p>
+      <p className="text-md text-balance">Hi I am the <span className='font-bold'>Founder and Director of SVATOL Ayurveda Healthcare and Research Foundation, </span>committed to making authentic Ayurveda accessible to all. As the <span className='font-bold'>General Secretary</span> of R.A. Podar Medical College (Ayu),I founded Ayurved Sauhaard, a state-level competition to support and encourage Ayurveda students</p>
+      <p className="text-md mt-4 md:mt-10">I have also served as <span className='font-bold'>President of the MUHS Students Council </span>and I am a proud NCC Cadet, having earned the <span className='font-bold'>TSC Delhi Gold Medal. </span>Through SVATOL, I strive to integrate research, education, and community engagement to promote Ayurveda’s relevance in modern healthcare.</p>
     </div>
     <div>
   <h1 className='mt-5 text-[#003425] text-center text-lg sm:text-xl md:text-xl italic font-bold'>
