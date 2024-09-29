@@ -27,7 +27,9 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/Oncology.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-xl font-serif text-center mt-5'>Oncology</h1>
+            <h1 className='text-black text-xl font-serif text-center '>Meditaion</h1>
+            <h1 className='text-black text-xl font-serif text-center mt-5'>Yoga</h1>
+            <h1 className='text-black text-xl font-serif text-center'>Diet</h1>
           </motion.div></Link>
 
           <Link to="/sr_Dermatology">
@@ -48,7 +50,9 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/General_Physician.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-lg font-serif text-center mt-5'>General_Physician</h1>
+            {/* <h1 className='text-black text-lg font-serif text-center mt-5'>General_Wellness</h1> */}
+            <h1 className='text-black text-xl font-serif text-center mt-5'>General</h1>
+            <h1 className='text-black text-xl font-serif text-center'>Wellness</h1>
           </motion.div>
           </Link>
         </motion.div>
@@ -169,8 +173,8 @@ function Services() {
             whileTap={{ scale: 0.9 }}
           >
             <img src={require('./Service_Logo/Annual_Routin_Check.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
-            <h1 className='text-black text-xl  font-serif text-center mt-5'>Annual Routin</h1>
-            <h1 className='text-black text-xl font-serif text-center'>Check</h1>
+            <h1 className='text-black text-xl  font-serif text-center mt-5'>Mental</h1>
+            <h1 className='text-black text-xl font-serif text-center'>Health</h1>
           </motion.div>
           </Link>
         </motion.div>

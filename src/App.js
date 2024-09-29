@@ -102,10 +102,10 @@ function App() {
       <Route path="/BookEvent" element={<BookEvent/>}> </Route>
 
 
-      <Route path="/sr_Annual" element={<Annualroutinecheckup/>}> </Route>
-      <Route path="/sr_Dermatology" element={<Dermatology/>}> </Route>
-      <Route path="/sr_Genralphysician" element={<Genralphysician/>}> </Route>
-      <Route path="/sr_Oncology" element={<Oncology/>}> </Route>
+      <Route path="/sr_mental_health" element={<Annualroutinecheckup/>}> </Route>
+      <Route path="/sr_dermatology" element={<Dermatology/>}> </Route>
+      <Route path="/sr_general_wellness" element={<Genralphysician/>}> </Route>
+      <Route path="/sr_yoga_diet_Meditation" element={<Oncology/>}> </Route>
       <Route path="/sr_Panchakarma" element={<Panchakarma/>}> </Route>
       <Route path="/sr_Preventivehealthcheckup" element={<Preventivehealthcheckup/>}> </Route>
 
