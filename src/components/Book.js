@@ -61,7 +61,7 @@ function Services() {
           transition={{ duration: 0.5, delay: 0.5 }}
         >
           <motion.img
-            src={require('./a1.jpeg')}
+            src={require('./servicesImg.jpeg')}
             alt="image 1"
             className="object-scale-down max-h-96 max-w-full rounded-lg"
             whileHover={{ scale: 1.05 }}

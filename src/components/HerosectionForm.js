@@ -13,8 +13,8 @@ export default function HerosectionForm() {
     patientEmail: '',
     patientMobile: '',
     appointmentDate: null,
-    enquiryType: '',
-    timeSlot: '', // Add timeSlot to the formData state
+    enquiryType: 'General Physician',
+    timeSlot: 'Morning (09-12)', // Add timeSlot to the formData state
   });
 
   const [submissionStatus, setSubmissionStatus] = useState(null);
@@ -62,7 +62,7 @@ export default function HerosectionForm() {
       return;
     }
     try {
-      const response = await axios.post('http://localhost/Svatol/contact_us.php', formData);
+      const response = await axios.post('http://localhost/Svatol/appoinement_form.php', formData);
       console.log('Response:', response.data);
       setSubmissionStatus('success');
       // Clear form after successful submission

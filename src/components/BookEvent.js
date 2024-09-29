@@ -263,12 +263,13 @@ export default function BookEvent() {
                   </button>
                 </form>
               </div>
-              <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 order-1 md:order-2">
-                <div className="flex justify-center">
-                  <img src={require("./gallery/ScannerDemo.jpeg")} alt="Registration" className="w-full" />
+              <div className="w-full  lg:w-7/12 order-1 md:order-2">
+                <div className="flex md:h-[82vh] justify-center">
+                  <img src={require("./SvatolQR2.jpeg")} alt="Registration" className="w-full" />
                 </div>
               </div>
             </div>
+            {/* shrink-0 grow-0 basis-auto */}
           </div>
         </div>
       </div>

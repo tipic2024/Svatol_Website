@@ -7,7 +7,6 @@ import { SR } from './components/SR';
 import Events from './components/Event';
 import Aboutus from './components/Aboutus';
 import Services from './components/Book';
-// import Doctor_Details from './components/Directors';
 
 
 
@@ -27,6 +26,9 @@ import FeaturdArticles from './components/About_Svtol_Read_More/FeaturdArticles'
 import SuccessStories from './components/About_Svtol_Read_More/SussessStories';
 import International_Appointement from './components/International_Appointement'
 import Directors from './components/Directors';
+import OurDoctors from './components/OurDoctors';
+import YogaMeditation from './components/YogaMeditation';
+
 // Keyframes for pulsating animation
 const pulse = keyframes`
   0% {
@@ -92,8 +94,9 @@ function App() {
       <Route path="/Directors" element={<Directors/>}> </Route>
       <Route path="/Aboutus" element={<Aboutus/>}> </Route>
       <Route path="/what_we_stands_for" element={<SR/>}> </Route>
-      
-      
+      <Route path="/ourDoctors" element={<OurDoctors/>}></Route>
+      <Route path="/YogaMeditation" element={<YogaMeditation/>}> </Route>
+
       <Route path="/Contactus" element={<Contactus/>}> </Route>
       <Route path="/book_appointment" element={<Booking/>}> </Route>
       <Route path="/BookEvent" element={<BookEvent/>}> </Route>

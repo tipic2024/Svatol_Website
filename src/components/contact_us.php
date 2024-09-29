@@ -2,10 +2,13 @@
 
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
+header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Allow-Credentials: true");
+
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "savatol";
+$username = "u425383992_svatol_user";
+$password = "^GrlVKaOZ8y";
+$dbname = "u425383992_svatol";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -19,15 +22,19 @@ if ($conn->connect_error) {
 $jsonData = file_get_contents('php://input');
 $data = json_decode($jsonData, true);
 
-$name = $data['patientName'];
-$enquery = $data['enquiryType'];
-$mobile = $data['patientMobile'];
-$email = $data['patientEmail'];
-$date = $data['appointmentDate'];
-$times = $data['timeSlot'];
+$name = $data['name'];
+$email = $data['email'];
+$mobile = $data['mobile'];
+$message = $data['message'];
 
-$sql = "INSERT INTO appointment (p_name, p_mobile, p_email, appointment_date,enquiry_type,time )
-VALUES ('".$name."', '".$mobile."', '".$email."', '".$date."','".$enquery."','".$times."')";
+
+// $sql = "INSERT INTO appointment (name, email, mobile, message)
+// VALUES ('".$name."', '"$email"', '".$mobile."', '".$message."')";
+$sql = "INSERT INTO contact_us(name, email, mobile, message) 
+        VALUES (?, ?, ?, ?)";
+
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("ssss", $name,$email, $mobile, $message);
 
 if ($conn->query($sql) === TRUE) {
   echo "SUCCESS";

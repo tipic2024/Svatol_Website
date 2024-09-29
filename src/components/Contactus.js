@@ -5,7 +5,7 @@ export default function Contactus() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    queries: '',
+    message: '',
     mobile:''
   });
   useEffect(() => {
@@ -43,11 +43,11 @@ export default function Contactus() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost/Svatol/test.php', formData);
+      const response = await axios.post('http://localhost/Svatol/contact_us.php', formData);
       console.log('Response:', response.data);
       if(response.data === "SUCCESS"){
         setSubmissionStatus('success');
-        setFormData({ name: '', email: '', queries: '',mobile:'' });
+        setFormData({ name: '', email: '', message: '',mobile:'' });
       }else{
         setSubmissionStatus('error');
       }
@@ -137,16 +137,17 @@ export default function Contactus() {
                 <div className="relative mb-6" data-te-input-wrapper-init>
                   <textarea
                     className={`peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none ${formData.queries ? 'placeholder-shown:-translate-y-[0.9rem] placeholder-shown:scale-[0.8] placeholder-shown:text-primary' : ''}`}
-                    id="queries"
+                    id="message"
                     rows="3"
-                    value={formData.queries}
+                    value={formData.message}
                     onChange={handleChange}
+                    placeholder='Message'
                   ></textarea>
                   <label
                     htmlFor="message"
                     className={`pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.queries ? '-translate-y-[0.9rem] scale-[0.8] hidden' : ''}`}
                   >
-                    Message
+                    
                   </label>
                 </div>
                 
@@ -203,7 +204,7 @@ export default function Contactus() {
                   </div>
                   <div>
                     <h6 className="text-sm font-bold font-serif mb-0">Phone</h6>
-                    <p className="text-sm text-neutral-600">+1 (123) 456-7890</p>
+                    <p className="text-sm text-neutral-600">+91 8799906277</p>
                   </div>
                 </div>
                 <div className="flex items-center mb-6">
@@ -226,7 +227,7 @@ export default function Contactus() {
                   <div>
                     <h6 className="text-sm font-bold font-serif  mb-0">Email</h6>
                     <p className="text-sm font-serif text-neutral-600">
-                      info@example.com
+                    info@svatolfoundation.com
                     </p>
                   </div>
                 </div>

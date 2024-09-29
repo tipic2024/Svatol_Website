@@ -7,7 +7,7 @@ function Directors() {
     <div className="bg-[#FFF6E7] flex justify-center  lg:h-[90vh]">
       <div className="w-[95%] flex flex-col md:flex-row">
         <div className="md:w-1/2 h-64 md:h-auto">
-          <img src={require('./Directors_img/Shubham2.png')} className="object-cover w-full h-full" alt="Doctor" />
+          <img src={require('./Directors_img/Shubham.png')} className="object-cover w-full h-full" alt="Doctor" />
         </div>
         <div className="w-full md:w-1/2 flex flex-col lg:mt-14 md:pl-16">
           <div>

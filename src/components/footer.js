@@ -49,14 +49,15 @@ function Footer() {
                 </div>
                 <div className='flex mt-1'>
                   <div className='bg-[#7B553C] h-8 w-8 rounded-full mr-3 mt-1'>
-                    <Link to="mailto:svatol@gmail.com">
+
+                    <Link to="mailto:info@svatolfoundation.com">
                       <IoIosMail size={15} color="white" className='bg-transparent mt-2 ml-2' />
                     </Link>
                   </div>
-                  <Link to="mailto:svatol@gmail.com">
+                  <Link to="mailto:info@svatolfoundation.com">
                     <div className='flex-col'>
                       <p className="text-[#7B553C] font-sans text-sm font-semibold">Mail Us</p>
-                      <p className="text-gray-800 text-sm font-sans mt-1">svatol@gmail.com</p>
+                      <p className="text-gray-800 text-sm font-sans mt-1">info@svatolfoundation.com</p>
                     </div>
                   </Link>
                 </div>
@@ -85,9 +86,25 @@ function Footer() {
               </div>
               <div className="sm:flex sm:items-center sm:justify-between">
               <div className="flex gap-4 hover:cursor-pointer mt-14">
-                <img src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg" width="30" height="30" alt="fb" />
-                <img src="https://www.svgrepo.com/show/303115/twitter-3-logo.svg" width="30" height="30" alt="tw" />
+                {/* <img src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg" width="30" height="30" alt="fb" />
+                <img src="https://www.svgrepo.com/show/303115/twitter-3-logo.svg" width="30" height="30" alt="tw" /> */}
+                <a href="https://www.instagram.com/svatol_ayurveda?igsh=YWxjZmM3eDBsd2Y%3D&utm_source=qr">
                 <img src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg" width="30" height="30" alt="inst" />
+                </a>
+                <div className='flex '>
+                  <div className='bg-[#7B553C] h-8 w-8 rounded-full mr-3 '>
+
+                    <Link to="mailto:info@svatolfoundation.com">
+                      <IoIosMail size={15} color="white" className='bg-transparent mt-2 ml-2' />
+                    </Link>
+                  </div>
+                  <Link to="mailto:info@svatolfoundation.com">
+                    <div className='flex-col'>
+                      {/* <p className="text-[#7B553C] font-sans text-sm font-semibold">Mail Us</p>
+                      <p className="text-gray-800 text-sm font-sans mt-1">info@svatolfoundation.com</p> */}
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
             </div>
