@@ -166,7 +166,7 @@ export default function OurDoctors() {
 <div className="bg-[#FFF6E7] flex justify-center  lg:h-[90vh]">
 <div className="w-[95%] flex flex-col md:flex-row">
   <div className="md:w-1/2 h-64 md:h-auto">
-    <img src={require('./OurDoctors/Aishwarya.png')} className="object-cover w-full h-full" alt="Doctor" />
+    <img src={require('./OurDoctors/Aishwarya2.png')} className="object-cover w-full h-full" alt="Doctor" />
   </div>
   <div className="w-full md:w-1/2 flex flex-col lg:mt-14 md:pl-16">
     <div>
@@ -256,17 +256,6 @@ export default function OurDoctors() {
            <p className="text-md text-balance">As a <span className='font-bold'>Sports Nutritionist,</span> I design <span className='font-bold'>customized diet plans</span> to meet the unique needs of <span className='font-bold'>athletes,</span> focusing on <span className='font-bold'>performance</span> and <span className='font-bold'>sustainable results</span> through balanced nutrition.</p>
         </div>
       <div>
-        {/* <div className="order-2 md:order-1 w-full md:w-1/2 flex flex-col lg:mt-14 md:pl-16">
-          <div>
-            <h1 className="font-serif text-3xl mt-4">Florencia Magali Martin</h1>
-            <h1 className="">500-hour Certified Yoga Instructor<br/>
-            (MIMAMSA Yogshala & Rishikul Yogshala, Rishikesh)</h1>
-          </div>
-          <div className="mt-4 md:mt-10">
-            <p className="text-md text-balance">I am <span className='font-bold'>Florencia Magali Martin,</span> a <span className='font-bold'>certified Yoga Instructor</span> with <span className='font-bold'>500-hour training</span> from <span className='font-bold'>MIMAMSA Yogshala</span> and <span className='font-bold'>Rishikul Yogshala in Rishikesh.</span> I create <span className='font-bold'>personalized, holistic yoga programs</span> that enhance <span className='font-bold'>physical</span> and<span className='font-bold'> mental well-being</span> through traditional practices.</p>
-            <p className="text-md mt-4 md:mt-10">Originally from Argentina, I blend the <span className='font-bold'>rich Indian yoga traditions</span> with my <span className='font-bold'>global experience,</span> offering a unique approach to my students.</p>
-          </div>
-        <div> */}
           <h1 className='mt-5 text-[#003425] text-center text-lg sm:text-xl md:text-xl font-bold do italic '>
   One click away  healthy lifestyle..
 </h1>
@@ -312,7 +301,7 @@ export default function OurDoctors() {
         </div>
         </div>
         <div className="order-1 md:order-2 md:w-1/2 h-64 md:h-auto">
-        <img src={require('./YogaMeditation/Avina.png')} className="object-cover w-full h-full" alt="Doctor" />
+        <img src={require('./OurDoctors/Teertha3.png')} className="object-cover w-full h-full" alt="Doctor" />
         </div>
       </div>
     </div>

@@ -165,7 +165,7 @@ One click away  healthy lifestyle..
         </div>
         </div>
         <div className="order-1 md:order-2 md:w-1/2 h-64 md:h-auto">
-        <img src={require('./YogaMeditation/Avina.png')} className="object-cover w-full h-full" alt="Doctor" />
+        <img src={require('./YogaMeditation/Teertha.png')} className="object-cover w-full h-full" alt="Doctor" />
         </div>
       </div>
     </div>
