@@ -101,12 +101,17 @@ One click away  healthy lifestyle..
          <div className="w-full md:w-1/2 flex flex-col lg:mt-14 md:pl-16">
         <div>
           <h1 className="font-serif text-3xl mt-4">Dr. Teertha</h1>
-          <p className="ml-2">B.A.M.S, Ayurveda Dietician,<br/> 
-          <span className='font-bold'>Sports and Performance Nutritionist (IIT Madras)</span></p>          
+          <p className="ml-2">B.A.M.S, <span className='font-bold'>Yoga Expert</span> & <span className='font-bold'>Ayurveda Dietician,</span><br/> 
+          Sports and Performance Nutritionist <span className='font-bold'>(IIT Madras)</span></p>          
         </div>
         <div className="mt-4 md:mt-10">
-           <p className="text-md text-balance">I am <span className='font-bold'>Dr. Teertha, BAMS,</span> a <span className='font-bold'>certified Ayurvedic Dietician</span> and <span className='font-bold'>Sports Nutritionist</span> specializing in using <span className='font-bold'>food as medicine</span> to optimize health. I create <span className='font-bold'>personalized nutrition plans</span> based on <span className='font-bold'>age, gender, health conditions,</span> and <span className='font-bold'>dietary goals</span> to enhance overall well-being.</p><br/>
-           <p className="text-md text-balance">As a <span className='font-bold'>Sports Nutritionist,</span> I design <span className='font-bold'>customized diet plans</span> to meet the unique needs of <span className='font-bold'>athletes,</span> focusing on <span className='font-bold'>performance</span> and <span className='font-bold'>sustainable results</span> through balanced nutrition.</p>
+        <p className="text-md text-balance">
+        I specialize in integrating <span className='font-bold'>Ayurvedic principles, yoga practices, and modern nutrition</span> to promote holistic health and well-being.</p>
+        <br/>
+        <p className="text-md text-balance">With a strong foundation in <span className='font-bold'>Ayurveda</span> and <span className='font-bold'>Sports Nutrition,</span> I create <span className='font-bold'>personalized diet plans</span> considering <span className='font-bold'>age, gender, health conditions,</span> and <span className='font-bold'>specific goals</span>. My approach emphasizes the importance of a <span className='font-bold'>balanced diet</span>, <span className='font-bold'>mindful eating</span>, and <span className='font-bold'>yoga-based lifestyle modifications</span> to achieve <span className='font-bold'>sustainable health outcomes</span>.</p>
+      <br/>
+      <p className="text-md text-balance">I guide individuals in achieving <span className='font-bold'>optimal health</span> through <span className='font-bold'>Ayurvedic nutrition, tailored yoga routines,</span> and <span className='font-bold'>performance-based diet plans</span> for athletes, focusing on improving <span className='font-bold'>strength, stamina,</span> and <span className='font-bold'>overall wellness.</span></p>
+
         </div>
       <div>
         {/* <div className="order-2 md:order-1 w-full md:w-1/2 flex flex-col lg:mt-14 md:pl-16">
