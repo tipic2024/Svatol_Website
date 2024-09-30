@@ -20,15 +20,15 @@ function Services() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
         > 
-        <Link to="/sr_Oncology">
+        <Link to="/sr_yoga_diet_Meditation">
           <motion.div 
             className='h-40 w-40 rounded-full bg-[#2E8B57] flex flex-col'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <img src={require('./Service_Logo/Oncology.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
+            <img src={require('./Service_Logo/Panchkarma.png')} className='object-scale-down h-10 w-10 ml-14 mt-7 ' />
             <h1 className='text-black text-xl font-serif text-center '>Meditaion</h1>
-            <h1 className='text-black text-xl font-serif text-center mt-5'>Yoga</h1>
+            <h1 className='text-black text-xl font-serif text-center '>Yoga</h1>
             <h1 className='text-black text-xl font-serif text-center'>Diet</h1>
           </motion.div></Link>
 
@@ -43,7 +43,7 @@ function Services() {
           </motion.div>
           </Link>
          
-          <Link to="/sr_Genralphysician">
+          <Link to="/sr_general_wellness">
           <motion.div 
             className='h-40 w-40 rounded-full bg-[#2E8B57] flex flex-col'
             whileHover={{ scale: 1.1 }}
@@ -166,7 +166,7 @@ function Services() {
           </motion.div>
           </Link>
 
-          <Link to="/sr_Annual">
+          <Link to="/sr_mental_health">
           <motion.div 
             className='h-40 w-40 rounded-full bg-[#2E8B57] flex flex-col'
             whileHover={{ scale: 1.1 }}
@@ -180,7 +180,7 @@ function Services() {
         </motion.div>
       </motion.div>
     </AnimatePresence>
-    <div class="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
+    {/* <div class="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
         <h2 class="text-3xl font-bold text-center mb-8">Frequently asked questions</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-white shadow-md rounded-md p-6">
@@ -220,10 +220,10 @@ function Services() {
                 </p>
             </div>
         </div>
-    </div>
+    </div> */}
     
-    <div class="flex justify-center mb-4">
-  <Link to="/contactus">
+    <div class="flex justify-center mb-4 bg-[#FFF6E7]">
+  <Link to="/contactus"  class=" bg-[#FFF6E7]">
     <button
       type="submit"
       className="w-96 rounded-full bg-sky-500 text-black px-6 pt-2.5 pb-2 text-lg font-serif font-bold uppercase leading-normal lg:mb-4"

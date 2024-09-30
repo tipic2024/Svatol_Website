@@ -91,10 +91,10 @@ function Directors() {
               <h1 className="">B.A.M.S. MD (Ayu) & Panchakarma Expert </h1>
               {/* <h1 className="lg:flex">MBA, Indian School of Business</h1> */}
             </div>
-            <div className="mt-4 md:mt-10">
-              <p className="text-md text-balance">I am Dr. Adesh, BAMS MD (Ayu) <span className='font-bold'>Founder of SVATOL Ayurveda Healthcare and Research Foundation</span> With expertise in Panchakarma, I have successfully treated over <span className='font-bold'>1,000 patients,</span> focusing on chronic joint and neurological disorders, fractures, and gut diseases like <span className='font-bold'>Crohn’s, IBS, and hyperacidity.</span></p>
-              <p className="text-md mt-4 md:mt-10">I also manage lifestyle disorders such as <span className='font-bold'>hypertension, thyroid, and diabetes</span> using Panchakarma, with a specialty in Vamana Karma. Additionally, I have researched the effectiveness of alum over soframycin 
-                <br/>in wound healing.</p>
+            <div className="mt-4 md:mt-3">
+              <p className="text-md text-balance">As the  <span className='font-bold'>Founder and Director of SVATOL Ayurveda Healthcare and Research Foundation</span>, Dr. Adesh brings a wealth of experience in Panchakarma therapies, having successfully treated over 1,000 patients. His expertise lies in addressing complex orthopedic conditions, including chronic joint disorders, neurological disorders, and fractures, where Ayurveda provides profound solutions for long-term healing and recovery. </p>
+              <p className="text-md mt-4 md:mt-5">Committed to advancing Ayurvedic research, Dr. Adesh has conducted studies on the use of alum in wound healing, demonstrating its superiority over soframycin, and offering an innovative, natural solution for effective wound care. </p> 
+            
             </div>
             <div>
             <h1 className='mt-5 text-[#003425] text-center text-lg sm:text-xl md:text-xl font-bold do italic '>
@@ -102,7 +102,7 @@ function Directors() {
   </h1>
 </div>
 
-<div className='flex flex-col sm:flex-row items-center justify-center mt-5'>
+<div className='flex flex-col sm:flex-row items-center justify-center mt-2'>
   <Link className='mb-3 sm:mb-0 sm:mr-3' to="/book_appointment">
     <button
       className='
@@ -176,17 +176,19 @@ function Directors() {
       <h1 className="">B.A.M.S, MSc (Psychology)</h1>
       {/* <h1 className="lg:flex">MBA, Indian School of Business</h1> */}
     </div>
-    <div className="mt-4 md:mt-10">
-      <p className="text-md text-balance">Hi I am the <span className='font-bold'>Founder and Director of SVATOL Ayurveda Healthcare and Research Foundation, </span>committed to making authentic Ayurveda accessible to all. As the <span className='font-bold'>General Secretary</span> of R.A. Podar Medical College (Ayu),I founded Ayurved Sauhaard, a state-level competition to support and encourage Ayurveda students</p>
-      <p className="text-md mt-4 md:mt-10">I have also served as <span className='font-bold'>President of the MUHS Students Council </span>and I am a proud NCC Cadet, having earned the <span className='font-bold'>TSC Delhi Gold Medal. </span>Through SVATOL, I strive to integrate research, education, and community engagement to promote Ayurveda’s relevance in modern healthcare.</p>
+
+    <div className="mt-4 md:mt-3">
+      <p className="text-md text-balance">Dr. Shivraj Balasaheb Kale is a visionary leader and one of the <span className='font-bold'>Founders and Directors of SVATOL Ayurveda Healthcare and Research Foundation.</span> Driven by a mission to make authentic and affordable Ayurveda accessible to all, Dr. Shivraj is dedicated to ensuring that the profound benefits of this ancient system of medicine reach people across all age groups and social strata</p>
+      <p className="text-md mt-4 md:mt-3">Dr. Shivraj’s leadership journey includes serving as President of the MUHS Students Council and as General Secretary of R.A. Podar Medical College, roles in which he demonstrated a strong dedication to student welfare and academic excellence. A decorated NCC Cadet and TSC Delhi Gold Medalist, he is also known for his discipline and commitment to service.
+      </p>
     </div>
     <div>
-  <h1 className='mt-5 text-[#003425] text-center text-lg sm:text-xl md:text-xl italic font-bold'>
+  <h1 className='mt-3 text-[#003425] text-center text-lg sm:text-xl md:text-xl italic font-bold'>
   One click away  healthy lifestyle..
   </h1>
 </div>
 
-<div className='flex flex-col sm:flex-row items-center justify-center mt-5'>
+<div className='flex flex-col sm:flex-row items-center justify-center mt-2'>
   <Link className='mb-3 sm:mb-0 sm:mr-3' to="/book_appointment">
     <button
       className='

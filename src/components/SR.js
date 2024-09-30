@@ -52,21 +52,16 @@ export function SR() {
                 SUCCESS STORIES
               </Typography>
               <Typography className="text-balance font-semibold">
-                {/* • Patient Profiles:<br />
-                • Health Challenges:<br />
-                • Treatment Journey:<br />
-                • Progress and Results:<br />
-                • Personal Testimonials:<br />
-                • Practitioner Insights:<br />
-                • Ethical Considerations:<br />
-                • Diversity and Representation: */}
+                
                 The section highlights various success stories through patient profiles, detailing health challenges, 
                 treatment journeys, and progress achieved. It includes personal testimonials, insights from practitioners, 
                 and emphasizes ethical considerations. The content also reflects on diversity and representation in healthcare experiences...
               </Typography>
             </CardBody>
             <CardFooter className="pt-0 lg:mt-2">
-              <Link to="/Success_story"><Button>Read More</Button></Link>
+              {/* <Link to="/Success_story"> */}
+              
+              <Link to="/what_we_stands_for"><Button disabled>Read More</Button></Link>
             </CardFooter>
           </Card>
 

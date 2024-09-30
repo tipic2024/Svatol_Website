@@ -13,10 +13,10 @@ import Services from './components/Book';
 
 import Booking from './components/Booking';
 import Footer from './components/footer';
-import Annualroutinecheckup from './components/Services/Annualroutinecheckup';
+import Annualroutinecheckup from './components/Services/MentalHealth';
 import Dermatology from './components/Services/Dermatology';
 import Genralphysician from './components/Services/Generalphysician';
-import Oncology from './components/Services/Oncology';
+import Oncology from './components/Services/YogaMeditation';
 import Preventivehealthcheckup from './components/Services/Preventivehealthcheckup';
 import Panchakarma from './components/Services/Panchakarma';
 import BookEvent from './components/BookEvent';
@@ -28,6 +28,8 @@ import International_Appointement from './components/International_Appointement'
 import Directors from './components/Directors';
 import OurDoctors from './components/OurDoctors';
 import YogaMeditation from './components/YogaMeditation';
+import YogaDietMeditation from './components/Services/YogaMeditation';
+import MentalHealth from './components/Services/MentalHealth';
 
 // Keyframes for pulsating animation
 const pulse = keyframes`
@@ -102,10 +104,10 @@ function App() {
       <Route path="/BookEvent" element={<BookEvent/>}> </Route>
 
 
-      <Route path="/sr_mental_health" element={<Annualroutinecheckup/>}> </Route>
+      <Route path="/sr_mental_health" element={<MentalHealth/>}> </Route>
       <Route path="/sr_dermatology" element={<Dermatology/>}> </Route>
       <Route path="/sr_general_wellness" element={<Genralphysician/>}> </Route>
-      <Route path="/sr_yoga_diet_Meditation" element={<Oncology/>}> </Route>
+      <Route path="/sr_yoga_diet_Meditation" element={<YogaDietMeditation/>}> </Route>
       <Route path="/sr_Panchakarma" element={<Panchakarma/>}> </Route>
       <Route path="/sr_Preventivehealthcheckup" element={<Preventivehealthcheckup/>}> </Route>
 

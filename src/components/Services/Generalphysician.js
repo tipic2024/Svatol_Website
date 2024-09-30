@@ -14,18 +14,10 @@ export default function Genralphysician() {
       <div className="sm:w-1/2 p-5 text-center lg:text-right animate__animated animate__fadeInRight">
         <div className="text">
           <h2 className="my-4 font-bold font-serif  text-3xl sm:text-4xl text-amber-900 text-center mt-0">
-            General Physician <span className="text-amber-900"></span>
+            General Wellness <span className="text-amber-900"></span>
           </h2>
           <p className="text-amber-950 text-justify font-serif">
-            General physicians, also known as primary care physicians or general practitioners, play a crucial role in
-            providing comprehensive healthcare services to individuals of all ages. These medical professionals are
-            typically the first point of contact for patients seeking medical care and are trained to diagnose, treat,
-            and manage a wide range of health conditions. General physicians are skilled in conducting physical examinations,
-            interpreting diagnostic tests, and prescribing medications to address acute and chronic illnesses. In addition
-            to treating specific health concerns, general physicians focus on promoting preventive care and wellness by
-            emphasizing the importance of healthy lifestyle choices, regular screenings, and vaccinations.
-            They often serve as coordinators of care, collaborating with specialists and other healthcare
-            providers to ensure patients receive appropriate and timely medical interventions.
+          General wellness through Ayurveda and meditation focuses on achieving holistic health by balancing the mind, body, and spirit using natural therapies, lifestyle practices, and mindfulness techniques. Ayurvedic practitioners employ personalized treatments such as herbal remedies, dietary guidelines, yoga, and detoxification methods like Panchakarma to restore internal harmony. Complementing these, meditation practices promote mental clarity, emotional stability, and stress reduction. Together, they aim to enhance digestion, boost immunity, and support overall vitality. This integrative approach helps prevent diseases, manage chronic conditions, and maintain long-term health by addressing the root causes rather than just alleviating symptoms.
           </p>
           <div className="mt-6 flex justify-center content-center animate__animated animate__zoomIn">
             <Link to="/book_appointment">

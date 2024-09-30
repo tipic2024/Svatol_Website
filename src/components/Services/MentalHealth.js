@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'animate.css';
  
-export default function Annualroutinecheckup() {
+export default function MentalHealth() {
   return (
     <div className="max-w-screen-xl mx-auto mt-1 bg-[#FFF6E7] flex flex-col md:flex-row items-center justify-center">
       <div className="sm:w-1/2 p-10 lg:w-1/2 flex justify-center animate__animated animate__fadeInLeft">
@@ -14,17 +14,10 @@ export default function Annualroutinecheckup() {
       <div className="sm:w-1/2 p-5 text-center lg:text-right animate__animated animate__fadeInRight">
         <div className="text">
           <h2 className="my-4 font-bold  font-serif text-3xl sm:text-4xl text-amber-900 text-center mt-0">
-            Annual Routine Checkup <span className="text-amber-900"></span>
+            <span className="text-amber-900">Mental health</span>
           </h2>
           <p className="text-amber-950 text-justify font-serif">
-            Routine checkups are essential for maintaining overall health and detecting
-            potential issues early. These checkups typically involve a comprehensive assessment
-            of various aspects of health, including physical, mental, and sometimes emotional well-being.
-            During a routine checkup, healthcare providers may measure vital signs such as blood pressure,
-            heart rate, and weight, as well as conduct screenings for conditions like high cholesterol,
-            diabetes, and certain cancers. In addition to physical examinations and screenings, routine
-            checkups often include discussions about lifestyle factors such as diet, exercise, sleep habits,
-            and stress management.
+          Mental health is a crucial aspect of overall well-being, focusing on the emotional, psychological, and social factors that influence how individuals think, feel, and behave. Mental health professionals specialize in diagnosing, treating, and preventing conditions such as depression, anxiety, bipolar disorder, schizophrenia, and substance abuse. They utilize various therapeutic approaches, including cognitive-behavioral therapy, counseling, medication management, and lifestyle interventions to promote mental stability and resilience. Treatment plans are personalized to address each individual's unique needs, aiming to restore balance and functionality. Mental health care also emphasizes the importance of early intervention, self-care, and social support to prevent long-term complications.
           </p>
           <div className="mt-6 flex justify-center content-center animate__animated animate__zoomIn">
             <Link to="/book_appointment">
