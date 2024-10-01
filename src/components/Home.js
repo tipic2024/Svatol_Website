@@ -27,39 +27,19 @@ import Doctors_Img3 from './Doctors_Img3'
 export default function Home() {
 
   return (
-    <div className='bg-[#FFF6E7] lg:max-w-7xl'>
-      
-
+    <div className='bg-[rgb(0,52,48)] lg:max-w-7xl'>
       {/* <GA/> */}
-
-     
-      
       {/* <H1/>
       <HerosectionForm/> */
       }
-
       <HeroPage/>
-      
-      
-      
       <Doctors_Img/>
       <Doctors_Img2/>
       <Doctors_Img3/>
       <Key_services/>
-     
-      
       {/* <Services/> */}
-      
       <Aboutus/>
-      <Contactus/>
-      
-
-      
-      
-      
-      
-    
-      
+      <Contactus/>  
     </div>
   )
 
