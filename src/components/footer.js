@@ -43,7 +43,7 @@ function Footer() {
                   <Link to="tel:+7517008893">
                     <div className='flex-col'>
                       <p className="text-[#7B553C] font-sans text-sm font-semibold">Call Us</p>
-                      <p className="text-gray-800 text-sm font-sans mt-1">+91 99999 99999</p>
+                      <p className="text-gray-800 text-sm font-sans mt-1">+91 8799906277</p>
                     </div>
                   </Link>
                 </div>

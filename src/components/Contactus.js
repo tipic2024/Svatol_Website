@@ -179,12 +179,19 @@ export default function Contactus() {
                     </svg>
                   </div>
                   <div>
-                    <h6 className="text-sm font-bold font-serif mb-0">Address</h6>
-                    <p className="text-sm text-neutral-600 font-serif">
-                      123 Main Street, New York, NY 10030
-                    </p>
+                    <div className=" font-bold font-serif mb-0">Address</div>
+                     <div className='flex'>
+                        <div className='flex-wrap'>
+                          <span className='font-bold text-sm '>Nashik Centre</span>
+                          <p className="text-sm text-neutral-600 font-serif">SVATOL Ayurveda Chikitsalaya,Panchkarma and Holistic Wellness Centre Row House No. 20D Sai Sukan Row House Near Radisson Blue Hotel, Pathardi Phata, Nashik City 422010</p>
+                       </div>
+                        <div className='flex-wrap'>
+                        <span className='font-bold text-sm'>Saswad Centre</span>
+                        <p className="text-sm text-neutral-600 font-serif">Bhaskar Ayurved Chikitsalaya Saichaya L/4, in front of Jaydeep Mangal Karyalaya, Shikshak Society, Saswad, Maharashtra 412301</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
                 <div className="flex items-center mb-6">
                   <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mr-4">
                     <svg
