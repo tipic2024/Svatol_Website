@@ -58,9 +58,6 @@ export default function Events() {
       
       
     </Carousel>
-    
-  
-      
                 <div className="flex justify-center mt-3">
                 <Link to="/BookEvent">
                  <button

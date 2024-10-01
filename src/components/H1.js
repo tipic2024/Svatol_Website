@@ -2,9 +2,9 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Pagination, Autoplay } from 'swiper/modules'; // Import Autoplay module
-import I1 from '../components/Homepage/purpose2.webp';
-import I2 from '../components/Homepage/MissionImg.webp';
-import I3 from '../components/Homepage/purpose1.webp';
+import I1 from '../components/Homepage/purpose1.webp';
+import I2 from '../components/Homepage/purpose2.webp';
+import I3 from '../components/Homepage/MissionImg.webp';
 
 export default function H1() {
   const slides = [
