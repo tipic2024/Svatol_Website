@@ -95,9 +95,9 @@ export default function OurDoctors() {
           <p className="ml-2">B.A.M.S&nbsp;,&nbsp;C.A.D&nbsp;,&nbsp;F.C.C.A.P.<br/> 
           </p>         
         </div>
-        <div className="mt-4 md:mt-10">
-        <p className="text-md text-balance">I am the <span className='font-bold'>Founder and Director of SVATOL Ayurveda Healthcare and Research Foundation</span>, serving as the Chief Ayurvedic Consultant.</p>
-        <p className="text-md mt-4 md:mt-10">I hold specialized training, including C.A.D. from Mumbai and F.C.C.A.P. from Kottakal, Kerala, with expertise in <span className='font-bold'>Panchkarma and Garbhsanskar</span> practices. Additionally, I am a certified <span className='font-bold'>Agni-Viddha Karma Expert</span> focused on holistic healing.</p>
+        <div className="mt-4 md:mt-5">
+        <p className="text-md text-balance">Dr. Shubham has a special interest and expertise in <span className='font-bold'> Ayurvedic Dermatology, Trichology, Ayurvedic Mental Healthcare, and Geriatric Healthcare.</span> His practice focuses on personalized care, addressing both physical and mental well-being through Ayurvedic principles. He integrates a spiritual aspect into his counseling and consulting, offering a holistic approach to health and healing that nurtures the body, mind, and spirit.</p>
+        <p className="text-md mt-4 md:mt-5">Dr. Shubham hold specialized training, including C.A.D. from Mumbai and F.C.C.A.P. from Kottakal, Kerala, with expertise in <span className='font-bold'>Panchkarma and Garbhsanskar</span> practices. Additionally,Dr. Shubham is certified <span className='font-bold'>Agni-Viddha Karma Expert</span> &nbsp;focused on holistic healing.</p>
         </div>
       <div>
         {/* <div className="order-2 md:order-1 w-full md:w-1/2 flex flex-col lg:mt-14 md:pl-16">
@@ -111,12 +111,12 @@ export default function OurDoctors() {
             <p className="text-md mt-4 md:mt-10">Originally from Argentina, I blend the <span className='font-bold'>rich Indian yoga traditions</span> with my <span className='font-bold'>global experience,</span> offering a unique approach to my students.</p>
           </div>
         <div> */}
-          <h1 className='mt-5 text-[#003425] text-center text-lg sm:text-xl md:text-xl font-bold do italic '>
+          <h1 className='mt-3 text-[#003425] text-center text-lg sm:text-xl md:text-xl font-bold do italic '>
   One click away  healthy lifestyle..
 </h1>
 </div>
 
-<div className='flex flex-col sm:flex-row items-center justify-center mt-5'>
+<div className='flex flex-col sm:flex-row items-center justify-center mt-2'>
 <Link className='mb-3 sm:mb-0 sm:mr-3' to="/book_appointment">
   <button
     className='

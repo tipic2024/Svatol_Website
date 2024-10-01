@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 
-export default function Doctors_Img() {
+export default function Doctors_Img2() {
   const controls = useAnimation();
   const [ref, inView] = useInView({                                            
     triggerOnce: false, // Changed to false to trigger animation every time          
@@ -26,18 +26,7 @@ export default function Doctors_Img() {
 
   return (
     <div className='bg-[#FFF6E7]'>
-      <div className='mt-24'>
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <h1 className='text-4xl text-center mt-10 font-bold font-serif'>Meet our Doctors</h1>
-        </motion.div>
-        <h1 className='text-center mt-5 font-serif'>
-        “Meet our team of doctors dedicated to offering a diverse array of programs and events designed to deepen your understanding and appreciation of Ayurveda. Our experts are committed to guiding you through personalized wellness journeys and holistic healing practices. Join us to explore the timeless wisdom of Ayurveda and achieve a balanced, healthy lifestyle
-        </h1>
-      </div>
-
+      
       <motion.div
         ref={ref}
         variants={containerVariants}
@@ -54,14 +43,13 @@ export default function Doctors_Img() {
             whileTap={{ scale: 0.9 }}
           >
             <img
-              src={require('./WhatsApp Image 2024-04-25 at 8.54.48 PM.jpeg')}
+              src={require('./OurDoctors/Avina.png')}
               alt=""
               className="lg:w-40 w-72 rounded-full"
             />
           </motion.div>
-          <h1 className='lg:mt-10 mt-5 text-lg font-bold font-serif'>Dr. Shubham S. Shete</h1>
-          <h2 className='text-sm font-serif'>B.A.M.S, C.A.D, F.C.C.A.P.
-    
+          <h1 className='lg:mt-10 mt-5 text-lg font-bold font-serif'>Dr. Avina</h1>
+          <h2 className='text-sm font-serif text-wrap'>B.A.M.S, C.R.A.V, Specialises in gynecological disorders.     
 </h2>
 <Link className='mb-3  ml-4 mt-3 sm:mb-0 sm:mr-3 ' to="/book_appointment">
     <button
@@ -135,14 +123,13 @@ export default function Doctors_Img() {
             whileTap={{ scale: 0.9 }}
           >
             <img
-              src={require('./Directors_img/AdeshDoctorsIMg.jpeg')}
+              src={require('./OurDoctors/Aishwarya.png')}
               alt=""
               className="lg:w-40 w-72 rounded-full"                             
             />                 
           </motion.div>
-          <h1 className='lg:mt-10 mt-5 font-bold font-serif'>Dr. Adesh B. Karkud</h1>
-          <h2 className='text-sm font-serif'>B.A.M.S. MD (Ayu) & Panchakarma Expert
-    
+          <h1 className='lg:mt-10 mt-5 font-bold font-serif'>Dr. Aishwarya Sansare</h1>
+          <h2 className='text-sm font-serif'>B.A.M.S, P.G.D.M.S, C.A.D, F.C.C.A.P
 </h2>
 <Link className='mb-3 ml-4  mt-3 sm:mb-0 sm:mr-3 ' to="/book_appointment">
     <button
@@ -216,15 +203,15 @@ export default function Doctors_Img() {
             whileTap={{ scale: 0.9 }}
           >
             <img
-              src={require('./d05ac2e3-14f4-4d48-808e-a910650ae371.jpg')}
+              src={require('./OurDoctors/TeerthaDoctorsImg.png')}
               alt=""
               className="lg:w-40 w-72 rounded-full"
             />
           </motion.div>
-          <h1 className='lg:mt-10 mt-5 font-bold font-serif'>Dr. Shivraj B. Kale</h1>
-          <h2 className='text-sm font-serif'>B.A.M.S, MSc (Psychology)</h2>
-
-    <Link className='mb-3 ml-4 mt-3 sm:mb-0 sm:mr-3 ' to="/book_appointment">
+          <h1 className='lg:mt-10 mt-5 font-bold font-serif'>Dr. Teertha</h1>
+          <h2 className='text-sm font-serif'>B.A.M.S, Yoga Expert & Ayurveda Dietician,
+</h2>
+<Link className='mb-3 ml-4 mt-3 sm:mb-0 sm:mr-3 ' to="/book_appointment">
     <button
       className='
         content-center 
@@ -288,6 +275,6 @@ export default function Doctors_Img() {
         </motion.div>
       </motion.div>
     </div>
-
+    
   );
 }

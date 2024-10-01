@@ -83,7 +83,7 @@ export function SR() {
                 • Target Audience:<br />
                 • Sponsorship and Partnerships:<br />
                 • Social Sharing and Engagement: */}
-                This section outlines upcoming events organized by the Savatol Foundation, 
+                This section outlines upcoming events organized by the Svatol Foundation, 
                 scheduled for September 10, 12, and 13, 2014, in Saswad-Pune. 
                 It provides registration details, agenda, featured topics, and themes. 
                 Information about the target audience, sponsorships, and opportunities for social sharing and engagement are also included...

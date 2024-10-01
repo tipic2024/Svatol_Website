@@ -21,6 +21,8 @@ import H1 from './H1'
 import HerosectionForm from './HerosectionForm'
 import { Slider } from '@material-tailwind/react'
 import HeroPage from './HeroPage'
+import Doctors_Img2 from './Doctors_Img2'
+import Doctors_Img3 from './Doctors_Img3'
 
 export default function Home() {
 
@@ -41,6 +43,8 @@ export default function Home() {
       
       
       <Doctors_Img/>
+      <Doctors_Img2/>
+      <Doctors_Img3/>
       <Key_services/>
      
       
