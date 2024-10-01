@@ -14,17 +14,17 @@ function Directors() {
             <h1 className="font-serif text-3xl mt-4">Dr. Shubham S. Shete</h1>
             <p className="ml-2">B.A.M.S, C.A.D, F.C.C.A.P.</p>
           </div>
-          <div className="mt-4 md:mt-10">
-              <p className="text-md text-balance">I am the <span className='font-bold'>Founder and Director of SVATOL Ayurveda Healthcare and Research Foundation</span>, serving as the Chief Ayurvedic Consultant.</p>
-            <p className="text-md mt-4 md:mt-10">I hold specialized training, including C.A.D. from Mumbai and F.C.C.A.P. from Kottakal, Kerala, with expertise in <span className='font-bold'>Panchkarma and Garbhsanskar</span> practices. Additionally, I am a certified <span className='font-bold'>Agni-Viddha Karma Expert</span> focused on holistic healing.</p>
+          <div className="mt-4 md:mt-3">
+              <p className="text-md text-balance">Dr. Shubham S. Shete is the <span className='font-bold'>Founder and Director of SVATOL Ayurveda Healthcare and Research Foundation</span>  and serves as the Chief Ayurvedic Consultant. He holds a B.A.M.S. degree from the renowned Tilak Ayurveda, Pune, a C.A.D. from Mumbai, and an F.C.C.A.P. from Kottakal, Kerala. Dr. Shubham is also a certified Panchakarma expert with a Certificate Course in Panchakarma from D.A.S.S., Dhule, and a certified Garbhsanskar practitioner. He is recognized as an Agni-Viddha Karma expert.</p>
+         <p className='mt-2'>Dr. Shubham is also closely involved with <span className='font-bold'>Prabhuram Gurukul </span> in Nashik City, contributing to the health and education of children through the Gurukul system, which emphasizes holistic development in alignment with Ayurvedic principles.</p>
           </div>
           <div>
-  <h1 className='mt-5 text-[#003425] text-center text-lg sm:text-xl  md:text-xl italic font-bold'>
+  <h1 className='mt-2 text-[#003425] text-center text-lg sm:text-xl  md:text-xl italic font-bold'>
   One click away  healthy lifestyle..
   </h1>
 </div>
 
-<div className='flex flex-col sm:flex-row items-center justify-center mt-5 '>
+<div className='flex flex-col sm:flex-row items-center justify-center mt-3 '>
   <Link className='mb-3 sm:mb-0 sm:mr-3' to="/book_appointment">
     <button
       className='content-center 
