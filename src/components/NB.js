@@ -14,11 +14,11 @@ export default function NB() {
 
     return (
         <nav className="w-full  sticky top-0 left-0 lg:max-w-7xl z-40">
-            <div className="justify-between h-21 md:h-auto px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 bg-[#FFF6E7] ">
+            <div className="justify-between h-21  md:h-auto lg:h-20 px px-4 mx-auto  md:items-center md:flex md:px-8 bg-[#FFF6E7] ">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link to="/" onClick={handleLinkClick}>
-                            <img className="opacity-100 md:pb-4 pt-0 h-18 ml-1 w-20 inline-block object-scale-down bg-transparent" src={Logo} alt="Logo" />
+                            <img className="opacity-100 md:pb-4 pt-0 h-18 ml-0 w-20 inline-block object-scale-down bg-transparent" src={Logo} alt="Logo" />
                         </Link>
                         <Link to="/" className="pt-2 self-center text-gray-900 hover:text-[#7B553C] font-bold inline-block">SVATOL AYURVEDA,<br/> HEALTHCARE & RESEARCH FOUNDATION</Link>
                         <div className="md:hidden">
@@ -94,14 +94,14 @@ export default function NB() {
                             <li className="hidden md:block">|</li>
 
                             <li className="text-gray-900 hover:text-[#7B553C] font-bold">
-                                <Link to="/Directors" onClick={handleLinkClick}>Directors</Link>
+                                <Link to="/Directors" onClick={handleLinkClick}>DIRECTORS</Link>
                             </li>
                              <li className="hidden md:block">|</li>
                            
 
                             {/* change this   */}
                             <li className="text-gray-900 hover:text-[#7B553C] font-bold">
-                                <Link to="/Events" onClick={handleLinkClick}>Events</Link>
+                                <Link to="/Events" onClick={handleLinkClick}>EVENTS</Link>
                             </li>
 
                              <li className="hidden md:block">|</li>

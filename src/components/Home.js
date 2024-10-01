@@ -25,37 +25,17 @@ import HeroPage from './HeroPage'
 export default function Home() {
 
   return (
-    <div className='bg-[#FFF6E7] lg:max-w-7xl'>
-      
-
+    <div className='bg-[rgb(0,52,48)] lg:max-w-7xl'>
       {/* <GA/> */}
-
-     
-      
       {/* <H1/>
       <HerosectionForm/> */
       }
-
       <HeroPage/>
-      
-      
-      
       <Doctors_Img/>
       <Key_services/>
-     
-      
       {/* <Services/> */}
-      
       <Aboutus/>
-      <Contactus/>
-      
-
-      
-      
-      
-      
-    
-      
+      <Contactus/>  
     </div>
   )
 

@@ -77,7 +77,7 @@ export default function HerosectionForm() {
     <section className=" ">
       
       <div className="container justify-center lg:justify-end px-full lg:px-full  mt-32  ">
-        <div className="block    bg-white py-7 -mt-[100px] backdrop-blur-[30px] border lg:border-l-0 md:border-l-0 border-gray-300">
+        <div className="block rounded-[12px] bg-white py-7 -mt-[100px] backdrop-blur-[30px] border lg:border-l-0 md:border-l-0 border-gray-300">
           {submissionStatus === 'success' && (
             <div className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-6" role="alert">
               <p>Form submitted successfully!</p>
@@ -89,7 +89,7 @@ export default function HerosectionForm() {
             </div>
           )}
           <div className="flex flex-col ">
-            <h1 className=' text-2xl font-serif font-bold text-center lg:text-center text-[#7B553C] mb-3 lg:mb-3  '>Patient  Appointment  Form</h1>
+            <h1 className=' text-2xl font-serif font-bold text-center lg:text-center text-[#7B553C] mb-3 lg:mb-3  '> Appointment  Form</h1>
             <div className="flex flex-wrap bg-green">
               <div className=" w-full shrink-0 grow-0 basis-auto  lg:mb-0 lg:w-full lg:px-6 ">
                 <form onSubmit={handleSubmit} className=''>
