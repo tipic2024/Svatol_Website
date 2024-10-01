@@ -68,12 +68,19 @@ function Footer() {
                     </Link>
                   </div>
                   <Link to="https://maps.app.goo.gl/L76HuDVuzsyrUfk69">
-                    <div className='flex-col'>
-                      <p className="text-[#7B553C] font-sans text-sm font-semibold">Visit Us</p>
+                    <div className='flex-row'>
+                      <p className="text-[#7B553C] font-sans text-sm font-semibold">Visit Us(Saswad centre)</p>
                       <p className="text-gray-800 text-sm font-sans mt-1 flex-wrap">Bhaskar Ayurved Chikitsalaya Saichaya L/4, in front of Jaydeep Mangal Karyalaya, Shikshak Society, Saswad, Maharashtra 412301</p>
                     </div>
                   </Link> 
                 </div>
+                {/* google map link for Nashik center is remaining */}
+                <Link to="">
+                    <div className='flex-row ml-11'>
+                      <p className="text-[#7B553C] font-sans text-sm font-semibold">Visit Us(Nashik Centre) </p>
+                      <p className="text-gray-800 text-sm font-sans mt-1 flex-wrap">SVATOL Ayurveda Chikitsalaya,Panchkarma and Holistic Wellness Centre Row House No. 20D Sai Sukan Row House Near Radisson Blue Hotel, Pathardi Phata, Nashik City 422010</p>
+                    </div>
+                  </Link> 
               </div>
             </div>
 
