@@ -13,29 +13,41 @@ export default function NB() {
     };
 
     return (
-        <nav className="w-full sticky top-0 left-0 lg:max-w-7xl z-40">
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 bg-[#FFF6E7] lg:h-14">
-                <div >
+        <nav className="w-full  sticky top-0 left-0 lg:max-w-7xl z-40">
+            <div className="justify-between h-21 md:h-auto px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 bg-[#FFF6E7] ">
+                <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <Link to="/" onClick={handleLinkClick}> 
-                            <img className="opacity-100 mt-0 pt-0 inline-block h-16 ml-1 object-scale-down bg-transparent" src={Logo} alt="Logo" />
+                        <Link to="/" onClick={handleLinkClick}>
+                            <img className="opacity-100 md:pb-4 pt-0 h-18 ml-1 w-20 inline-block object-scale-down bg-transparent" src={Logo} alt="Logo" />
                         </Link>
-                        <div className="text-center inline-block md:invisible lg:visible lg:text-left">
-                        <p className="inline-block font-bold">SVATOL AYURVEDA FOUNDATION</p>
-                        </div>
-                       
-                        {/* <div className="flex lg:ml-auto max-lg:w-full font-bold">SVATOL AYURVEDA HELP & RESEARCH FOUNDATION</div> */}
+                        <Link to="/" className="pt-2 self-center text-gray-900 hover:text-[#7B553C] font-bold inline-block">SVATOL AYURVEDA,<br/> HEALTHCARE & RESEARCH FOUNDATION</Link>
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-gray-300 rounded-md outline-none focus:border-gray-400 focus:border"
+                                className="p-2 text-gray-300 rounded-md outline-none focus:border-gray-400focus:border"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"/>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="w-6 h-6"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                            clipRule="evenodd"
+                                        />
                                     </svg>
                                 ) : (
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="w-6 h-6"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                        strokeWidth={2}
+                                    >
                                         <path
                                             strokeLinecap="round"
                                             strokeLinejoin="round"
@@ -45,22 +57,23 @@ export default function NB() {
                                 )}
                             </button>
                         </div>
-                       
                     </div>
                 </div>
                 <div>
                     <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}>
+                    
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            
-                            <li className="text-gray-900 ml-2 hover:text-[#7B553C] font-bold">
+                        <li className="hidden md:block">|</li>
+                            <li className="text-gray-900 hover:text-[#7B553C] font-bold">
                                 <Link to="/" onClick={handleLinkClick}>HOME </Link>
                                 
                             </li>
-                            <li className="">|</li>
-                            <li className="group max-lg:border-b max-lg:py-2 relative">
-                                <a href="javascript:void(0)" className="hover:text-[#7B553C] text-gray-900 text-[15px] font-bold lg:hover:fill-[#007bff] block">
-                                   WHY SVATOL
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" className="ml-1 inline-block" viewBox="0 0 24 24">
+                             <li className="hidden md:block">|</li>
+                            <li className="group flex max-lg:border-b max-lg:py-2 relative">
+                                <a href="group javascript:void(0)" className="inline-block hover:text-[#7B553C] text-gray-900 text-[15px] font-bold lg:hover:fill-[#007bff]">
+                                {/* <span className="hidden md:inline-block lg:hidden">WHY WE</span> */}
+                                WHY WE
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" className="inline-block ml-1" viewBox="0 0 24 24">
                                         <path
                                             d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
                                             data-name="16" data-original="#000000"
@@ -76,13 +89,14 @@ export default function NB() {
 
                                     </li>
                                 </ul>
-                                </li>
-                            <li>|</li>
+                            </li>
+
+                            <li className="hidden md:block">|</li>
 
                             <li className="text-gray-900 hover:text-[#7B553C] font-bold">
                                 <Link to="/Directors" onClick={handleLinkClick}>Directors</Link>
                             </li>
-                            <li>|</li>
+                             <li className="hidden md:block">|</li>
                            
 
                             {/* change this   */}
@@ -90,7 +104,7 @@ export default function NB() {
                                 <Link to="/Events" onClick={handleLinkClick}>Events</Link>
                             </li>
 
-                            <li>|</li>
+                             <li className="hidden md:block">|</li>
                           
                             <li className="group max-lg:border-b max-lg:py-2 relative">
                                 <a href="javascript:void(0)" className="hover:text-[#7B553C] text-gray-900 text-[15px] font-bold lg:hover:fill-[#007bff] block">
@@ -116,7 +130,7 @@ export default function NB() {
                                     </li>
                                 </ul>
                             </li>
-                            <li>|</li>
+                             <li className="hidden md:block">|</li>
                         
                             {/* <li>
                                 <a href="https://www.youtube.com/" className="text-red-600 hover:text-gray-500">
